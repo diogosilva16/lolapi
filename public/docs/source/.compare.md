@@ -1,0 +1,1747 @@
+---
+title: API Reference
+
+language_tabs:
+- bash
+- javascript
+
+includes:
+
+search: true
+
+toc_footers:
+- <a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
+---
+<!-- START_INFO -->
+# Info
+
+Welcome to the generated API reference.
+[Get Postman Collection](http://localhost/docs/collection.json)
+
+<!-- END_INFO -->
+
+#general
+
+
+<!-- START_7c1e0ac0639bb1be6ffd9043492c477a -->
+## _ignition/health-check
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/_ignition/health-check" 
+```
+
+```javascript
+const url = new URL("http://localhost/_ignition/health-check");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": ""
+}
+```
+
+### HTTP Request
+`GET _ignition/health-check`
+
+
+<!-- END_7c1e0ac0639bb1be6ffd9043492c477a -->
+
+<!-- START_e5f8cf3530eb18016c5b38d338c824a4 -->
+## _ignition/execute-solution
+> Example request:
+
+```bash
+curl -X POST "http://localhost/_ignition/execute-solution" 
+```
+
+```javascript
+const url = new URL("http://localhost/_ignition/execute-solution");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST _ignition/execute-solution`
+
+
+<!-- END_e5f8cf3530eb18016c5b38d338c824a4 -->
+
+<!-- START_c7878c22064327a038e101c534d2690d -->
+## _ignition/share-report
+> Example request:
+
+```bash
+curl -X POST "http://localhost/_ignition/share-report" 
+```
+
+```javascript
+const url = new URL("http://localhost/_ignition/share-report");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST _ignition/share-report`
+
+
+<!-- END_c7878c22064327a038e101c534d2690d -->
+
+<!-- START_022a636baa67209b79bda81cb8c2b0c5 -->
+## _ignition/scripts/{script}
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/_ignition/scripts/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/_ignition/scripts/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": ""
+}
+```
+
+### HTTP Request
+`GET _ignition/scripts/{script}`
+
+
+<!-- END_022a636baa67209b79bda81cb8c2b0c5 -->
+
+<!-- START_f58213cd71dff813cecd421259a65e22 -->
+## _ignition/styles/{style}
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/_ignition/styles/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/_ignition/styles/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": ""
+}
+```
+
+### HTTP Request
+`GET _ignition/styles/{style}`
+
+
+<!-- END_f58213cd71dff813cecd421259a65e22 -->
+
+<!-- START_8287b53731a7e2de025ffda4593f75da -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/champion" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/champion`
+
+
+<!-- END_8287b53731a7e2de025ffda4593f75da -->
+
+<!-- START_33980d59662416a10e9a0fb69a7fce80 -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/champion/create" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion/create");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/champion/create`
+
+
+<!-- END_33980d59662416a10e9a0fb69a7fce80 -->
+
+<!-- START_eb6c9c2dffb31ca44295ceabe2fe6ccc -->
+## Store a newly created resource in storage.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/champion" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST api/champion`
+
+
+<!-- END_eb6c9c2dffb31ca44295ceabe2fe6ccc -->
+
+<!-- START_f52374dd94e3ace8fda487ce2cb0b34c -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/champion/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+{
+    "id": 1,
+    "name": "Aatrox",
+    "title": "the Darkin Blade",
+    "description": "atrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. ",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null,
+    "image": ""
+}
+```
+
+### HTTP Request
+`GET api/champion/{champion}`
+
+
+<!-- END_f52374dd94e3ace8fda487ce2cb0b34c -->
+
+<!-- START_11db9e3254fc7f2a5ea7029d3d7ae765 -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/champion/1/edit" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion/1/edit");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/champion/{champion}/edit`
+
+
+<!-- END_11db9e3254fc7f2a5ea7029d3d7ae765 -->
+
+<!-- START_c43ccc58724871827265582aa9a55641 -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/champion/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`PUT api/champion/{champion}`
+
+`PATCH api/champion/{champion}`
+
+
+<!-- END_c43ccc58724871827265582aa9a55641 -->
+
+<!-- START_f9a2754f480c4e47f74880789347ecc4 -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/champion/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/champion/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`DELETE api/champion/{champion}`
+
+
+<!-- END_f9a2754f480c4e47f74880789347ecc4 -->
+
+<!-- START_d59c689c20c9c3ca67836008e1702d4d -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/championSkill" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/championSkill`
+
+
+<!-- END_d59c689c20c9c3ca67836008e1702d4d -->
+
+<!-- START_18515feb2f30d7348b51a65eaace7b85 -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/championSkill/create" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill/create");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/championSkill/create`
+
+
+<!-- END_18515feb2f30d7348b51a65eaace7b85 -->
+
+<!-- START_d367bede4992567617eb7ccd98aa78fa -->
+## Store a newly created resource in storage.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/championSkill" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST api/championSkill`
+
+
+<!-- END_d367bede4992567617eb7ccd98aa78fa -->
+
+<!-- START_149309ea10a73c9a833bb5da5f78fab7 -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/championSkill/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+{
+    "id": 1,
+    "small_name": "AatroxQ",
+    "name": "Dark Flight",
+    "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+    "champ_id": 1,
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null,
+    "image": ""
+}
+```
+
+### HTTP Request
+`GET api/championSkill/{championSkill}`
+
+
+<!-- END_149309ea10a73c9a833bb5da5f78fab7 -->
+
+<!-- START_ae575c6bd7ff5c56a77930a0e2ff9377 -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/championSkill/1/edit" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill/1/edit");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response:
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/championSkill/{championSkill}/edit`
+
+
+<!-- END_ae575c6bd7ff5c56a77930a0e2ff9377 -->
+
+<!-- START_9891e07714209a0de0ce63158580eeac -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/championSkill/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`PUT api/championSkill/{championSkill}`
+
+`PATCH api/championSkill/{championSkill}`
+
+
+<!-- END_9891e07714209a0de0ce63158580eeac -->
+
+<!-- START_57be34943ea7b4722a94a75e1a795b38 -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/championSkill/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/championSkill/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`DELETE api/championSkill/{championSkill}`
+
+
+<!-- END_57be34943ea7b4722a94a75e1a795b38 -->
+
+<!-- START_53be1e9e10a08458929a2e0ea70ddb86 -->
+## /
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/" 
+```
+
+```javascript
+const url = new URL("http://localhost/");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET /`
+
+
+<!-- END_53be1e9e10a08458929a2e0ea70ddb86 -->
+
+<!-- START_9b8c7e4f15e9ba8f7baa7392adaf9bb2 -->
+## list
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/list" 
+```
+
+```javascript
+const url = new URL("http://localhost/list");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+[
+    {
+        "id": 1,
+        "name": "Aatrox",
+        "title": "the Darkin Blade",
+        "description": "atrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. ",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": "",
+        "champion_skills": [
+            {
+                "id": 1,
+                "small_name": "AatroxQ",
+                "name": "Dark Flight",
+                "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 2,
+                "small_name": "AatroxW",
+                "name": "Blood Thirst \/ Blood Price",
+                "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 3,
+                "small_name": "AatroxE",
+                "name": "Blades of Torment",
+                "description": "Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 4,
+                "small_name": "AatroxR",
+                "name": "Massacre",
+                "description": "atrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Ahri",
+        "title": "the Nine-Tailed Fox",
+        "description": "Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete.",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": "",
+        "champion_skills": [
+            {
+                "id": 5,
+                "small_name": "AhriQ",
+                "name": "Orb of Deception",
+                "description": "hri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. Ahri gains movement speed that decays while her orb is traveling.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 6,
+                "small_name": "AhriW",
+                "name": "Fox-Fire",
+                "description": "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 7,
+                "small_name": "AhriE",
+                "name": "Charm",
+                "description": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 8,
+                "small_name": "AhriR",
+                "name": "Spirit Rush",
+                "description": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Akali",
+        "title": "the Fist of Shadow",
+        "description": "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe.",
+        "created_at": "2019-10-14 22:04:26",
+        "updated_at": "2019-10-14 22:04:26",
+        "deleted_at": null,
+        "image": "",
+        "champion_skills": [
+            {
+                "id": 9,
+                "small_name": "AkaliQ",
+                "name": "Mark of the Assassin",
+                "description": "Akali spins her kama at a target enemy to deal Magic Damage and mark the target for 6 seconds. Akali's melee attacks against a marked target will trigger and consume the mark to cause additional damage and restore Energy.",
+                "champ_id": 3,
+                "created_at": "2019-10-18 15:36:33",
+                "updated_at": "2019-10-18 15:36:33",
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 11,
+                "small_name": "AkaliW",
+                "name": "Twilight Shroud",
+                "description": "Akali teleports to a nearby location, leaving a cover of smoke at her previous location. While inside the shroud, Akali becomes Invisible and gains Movement Speed. Attacking or using abilities will briefly reveal her.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:48:39",
+                "updated_at": "2019-10-24 21:48:39",
+                "deleted_at": null,
+                "image": "champSkills\/2cycg6fjXsYNuRs5rXCHseZcZ9UGcmbHNW7Sow7K.png"
+            },
+            {
+                "id": 12,
+                "small_name": "AkaliE",
+                "name": "Shuriken Flip",
+                "description": "lip backward and fire a shuriken forward, dealing physical damage. The first enemy or smoke cloud hit is marked. Re-cast to dash to the marked target, dealing additional damage.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:51:53",
+                "updated_at": "2019-10-24 21:51:53",
+                "deleted_at": null,
+                "image": "champSkills\/D7XFTnMGwogFks3U8HAerHkozgLjyWR01g2hXYef.png"
+            },
+            {
+                "id": 13,
+                "small_name": "AkaliR",
+                "name": "Perfect Execution",
+                "description": "Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in a direction, executing all enemies she strikes.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:52:53",
+                "updated_at": "2019-10-24 21:52:53",
+                "deleted_at": null,
+                "image": "champSkills\/1aKW7A7mWfz4Ah9NszYF9x3edfps7ojHJoeGIauE.png"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Alistar",
+        "title": "the Minotaur",
+        "description": "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army.",
+        "created_at": "2019-10-24 21:59:35",
+        "updated_at": "2019-10-24 21:59:35",
+        "deleted_at": null,
+        "image": "champImage\/VqA1AAxWPvOAhiFqPnjOt3DmS3FAMPlM3El5Fajt.png",
+        "champion_skills": []
+    },
+    {
+        "id": 5,
+        "name": "Amumu",
+        "title": "the Sad Mummy",
+        "description": "A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever.",
+        "created_at": "2019-10-24 22:01:19",
+        "updated_at": "2019-10-24 22:01:19",
+        "deleted_at": null,
+        "image": "champImage\/1MiNCQnSQsgaOYZVdlvItazG2xLpjrLFuZCoIHrK.png",
+        "champion_skills": []
+    },
+    {
+        "id": 6,
+        "name": "Anivia",
+        "title": "the Cryophoenix",
+        "description": "Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home",
+        "created_at": "2019-10-24 22:15:31",
+        "updated_at": "2019-10-24 22:15:31",
+        "deleted_at": null,
+        "image": "champImage\/Wxqeveh8NuTFNS1DyoQ5DO9YCGrfWsOoNJhiES8U.png",
+        "champion_skills": []
+    },
+    {
+        "id": 7,
+        "name": "Annie",
+        "title": "the Dark Child",
+        "description": "There have always been those within Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion",
+        "created_at": "2019-10-24 22:18:11",
+        "updated_at": "2019-10-24 22:18:11",
+        "deleted_at": null,
+        "image": "champImage\/lKjRXbzQD2koddgW3UiMTjQlAsYTq44HfhaEXS0B.png",
+        "champion_skills": []
+    }
+]
+```
+
+### HTTP Request
+`GET list`
+
+
+<!-- END_9b8c7e4f15e9ba8f7baa7392adaf9bb2 -->
+
+<!-- START_3661a6c6eeba5ae354d95804202f310d -->
+## insert-champion
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/insert-champion" 
+```
+
+```javascript
+const url = new URL("http://localhost/insert-champion");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET insert-champion`
+
+
+<!-- END_3661a6c6eeba5ae354d95804202f310d -->
+
+<!-- START_25df12409171eb98393e6de8bafe8bb6 -->
+## insert-champion
+> Example request:
+
+```bash
+curl -X POST "http://localhost/insert-champion" 
+```
+
+```javascript
+const url = new URL("http://localhost/insert-champion");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST insert-champion`
+
+
+<!-- END_25df12409171eb98393e6de8bafe8bb6 -->
+
+<!-- START_66e08d3cc8222573018fed49e121e96d -->
+## Show the application&#039;s login form.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/login" 
+```
+
+```javascript
+const url = new URL("http://localhost/login");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET login`
+
+
+<!-- END_66e08d3cc8222573018fed49e121e96d -->
+
+<!-- START_ba35aa39474cb98cfb31829e70eb8b74 -->
+## Handle a login request to the application.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/login" 
+```
+
+```javascript
+const url = new URL("http://localhost/login");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST login`
+
+
+<!-- END_ba35aa39474cb98cfb31829e70eb8b74 -->
+
+<!-- START_e65925f23b9bc6b93d9356895f29f80c -->
+## Log the user out of the application.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/logout" 
+```
+
+```javascript
+const url = new URL("http://localhost/logout");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST logout`
+
+
+<!-- END_e65925f23b9bc6b93d9356895f29f80c -->
+
+<!-- START_ff38dfb1bd1bb7e1aa24b4e1792a9768 -->
+## Show the application registration form.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/register" 
+```
+
+```javascript
+const url = new URL("http://localhost/register");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET register`
+
+
+<!-- END_ff38dfb1bd1bb7e1aa24b4e1792a9768 -->
+
+<!-- START_d7aad7b5ac127700500280d511a3db01 -->
+## Handle a registration request for the application.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/register" 
+```
+
+```javascript
+const url = new URL("http://localhost/register");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST register`
+
+
+<!-- END_d7aad7b5ac127700500280d511a3db01 -->
+
+<!-- START_d72797bae6d0b1f3a341ebb1f8900441 -->
+## Display the form to request a password reset link.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/password/reset" 
+```
+
+```javascript
+const url = new URL("http://localhost/password/reset");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET password/reset`
+
+
+<!-- END_d72797bae6d0b1f3a341ebb1f8900441 -->
+
+<!-- START_feb40f06a93c80d742181b6ffb6b734e -->
+## Send a reset link to the given user.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/password/email" 
+```
+
+```javascript
+const url = new URL("http://localhost/password/email");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST password/email`
+
+
+<!-- END_feb40f06a93c80d742181b6ffb6b734e -->
+
+<!-- START_e1605a6e5ceee9d1aeb7729216635fd7 -->
+## Display the password reset view for the given token.
+
+If no token is present, display the link request form.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/password/reset/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/password/reset/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET password/reset/{token}`
+
+
+<!-- END_e1605a6e5ceee9d1aeb7729216635fd7 -->
+
+<!-- START_cafb407b7a846b31491f97719bb15aef -->
+## Reset the given user&#039;s password.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/password/reset" 
+```
+
+```javascript
+const url = new URL("http://localhost/password/reset");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST password/reset`
+
+
+<!-- END_cafb407b7a846b31491f97719bb15aef -->
+
+<!-- START_cb859c8e84c35d7133b6a6c8eac253f8 -->
+## Show the application dashboard.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/home" 
+```
+
+```javascript
+const url = new URL("http://localhost/home");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET home`
+
+
+<!-- END_cb859c8e84c35d7133b6a6c8eac253f8 -->
+
+<!-- START_e40bc60a458a9740730202aaec04f818 -->
+## admin
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/admin" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET admin`
+
+
+<!-- END_e40bc60a458a9740730202aaec04f818 -->
+
+<!-- START_bd487ab94d8034c2d13644bb1772fdfa -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/admin/user" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET admin/user`
+
+
+<!-- END_bd487ab94d8034c2d13644bb1772fdfa -->
+
+<!-- START_85482a73dd59bd3ef1adaab154cc5407 -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/admin/user/create" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user/create");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET admin/user/create`
+
+
+<!-- END_85482a73dd59bd3ef1adaab154cc5407 -->
+
+<!-- START_71dba47ec1215d1147a3f8e59c55751a -->
+## Store a newly created resource in storage.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/admin/user" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`POST admin/user`
+
+
+<!-- END_71dba47ec1215d1147a3f8e59c55751a -->
+
+<!-- START_3b3de25d21f37e1748b345027c37ce73 -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/admin/user/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET admin/user/{user}`
+
+
+<!-- END_3b3de25d21f37e1748b345027c37ce73 -->
+
+<!-- START_8dbd3c8dace74c8cc20dbdadc3a61eed -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/admin/user/1/edit" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user/1/edit");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+
+### HTTP Request
+`GET admin/user/{user}/edit`
+
+
+<!-- END_8dbd3c8dace74c8cc20dbdadc3a61eed -->
+
+<!-- START_7bc8a51548d7c6e9ac5bc7dda1263ba7 -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/admin/user/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`PUT admin/user/{user}`
+
+`PATCH admin/user/{user}`
+
+
+<!-- END_7bc8a51548d7c6e9ac5bc7dda1263ba7 -->
+
+<!-- START_b8a25da15b804e04ecaa4bf05806041e -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/admin/user/1" 
+```
+
+```javascript
+const url = new URL("http://localhost/admin/user/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+
+### HTTP Request
+`DELETE admin/user/{user}`
+
+
+<!-- END_b8a25da15b804e04ecaa4bf05806041e -->
+
+

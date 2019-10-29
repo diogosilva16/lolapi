@@ -16,6 +16,10 @@
  */
 Route::get('/', 'MainController@index')->name('index');
 
+Route::get('/list', 'MainController@list')->name('list');
+
+Route::get('/insert-champion', 'MainController@form')->name('insert-form');
+Route::post('/insert-champion', 'MainController@insert')->name('insert-champion');
 /**
  *  Auth & Registration
  */
