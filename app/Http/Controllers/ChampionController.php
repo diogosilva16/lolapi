@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Champion;
+use App\Http\Requests\ChampionStoreRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -34,25 +35,9 @@ class ChampionController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChampionStoreRequest $request)
     {
         $data = $request->all();
-
-        $validate = Validator::make($data, [
-            'name' => 'required|string',
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'image' => 'required|image'
-        ], [
-            'name.required' => 'É necessário preencher o nome',
-            'title.required' => 'É necessário preencher o título',
-            'description.required' => 'É necessário preencher a descrição',
-            'image.required' => 'É necessário adicionar uma imagem',
-        ]);
-
-        if ($validate->fails()) {
-            return $validate->errors()->all();
-        }
 
         $file = $request->file('image')->store('champImage');
 

@@ -45,7 +45,7 @@ class MainController extends Controller
 
         Champion::create($data);
 
-        return redirect()->route('list');
+        return redirect()->route('champlist');
     }
 
     public function form(Request $request)

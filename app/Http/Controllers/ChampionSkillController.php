@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\ChampionSkill;
+use App\Http\Requests\ChampionSkillStoreRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -34,27 +35,9 @@ class ChampionSkillController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChampionSkillStoreRequest $request)
     {
         $data = $request->all();
-
-        $validate = Validator::make($data, [
-            'small_name' => 'required|string',
-            'name' => 'required|string',
-            'description' => 'required|string|',
-            'champ_id' => 'required|exists:champions,id',
-            'image' => 'required|image'
-        ], [
-            'small_name.required' => 'É necessário preencher o small name',
-            'name.required' => 'É necessário preencher o título',
-            'description.required' => 'É necessário preencher a descrição',
-            'champ_id.required' => 'É necessário preencher o id do champion',
-            'image.required' => 'É necessário adicionar uma imagem da skill',
-        ]);
-
-        if($validate->fails()){
-            return $validate->errors()->all();
-        }
 
         $file = $request->file('image')->store('champSkills');
 

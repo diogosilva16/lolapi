@@ -3,6 +3,11 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
+            <button  onclick="location.href='{{route('insert-champion')}}'">Adicionar novo champion</button>
+            <button>Adicionar nova skin</button>
+            <button>Adicionar nova habilidade</button>
+        </div>
+        <div class="row justify-content-center">
             <div class="col-md-8">
                 @foreach( $champions as $champion)
                     <div class="card mb-3">
@@ -14,7 +19,9 @@
                                     <p>{{$champion ->description}}</p>
                                     <button type="button" class="btn btn-warning">Skills</button>
                                     <button type="button" class="btn btn-warning">Skins</button>
-                                    <button type="button" class="btn btn-warning" onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">Editar</button>
+                                    <button type="button" class="btn btn-warning"
+                                            onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">Editar
+                                    </button>
                                     @foreach($champion->championSkills as $skill)
                                         <p>{{$skill->name}}</p>
                                     @endforeach
