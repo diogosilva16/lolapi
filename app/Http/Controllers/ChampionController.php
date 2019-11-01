@@ -31,7 +31,7 @@ class ChampionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -39,9 +39,9 @@ class ChampionController extends Controller
         $data = $request->all();
 
         $validate = Validator::make($data, [
-           'name' => 'required|string',
-           'title' => 'required|string',
-           'description' => 'required|string',
+            'name' => 'required|string',
+            'title' => 'required|string',
+            'description' => 'required|string',
             'image' => 'required|image'
         ], [
             'name.required' => 'É necessário preencher o nome',
@@ -50,7 +50,7 @@ class ChampionController extends Controller
             'image.required' => 'É necessário adicionar uma imagem',
         ]);
 
-        if($validate->fails()){
+        if ($validate->fails()) {
             return $validate->errors()->all();
         }
 
@@ -72,7 +72,7 @@ class ChampionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Champion  $champion
+     * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
      */
     public function show(Champion $champion)
@@ -83,7 +83,7 @@ class ChampionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Champion  $champion
+     * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
      */
     public function edit(Champion $champion)
@@ -94,13 +94,36 @@ class ChampionController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Champion  $champion
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Champion $champion)
     {
         $data = $request->all();
+//        $champion->update($data);
+
+        $validate = Validator::make($data, [
+            'name' => 'required|string',
+            'title' => 'required|string',
+            'description' => 'required|string',
+            'image' => 'required|image'
+        ], [
+            'name.required' => 'É necessário preencher o nome',
+            'title.required' => 'É necessário preencher o título',
+            'description.required' => 'É necessário preencher a descrição',
+            'image.required' => 'É necessário adicionar uma imagem',
+        ]);
+
+        if ($validate->fails()) {
+            return $validate->errors()->all();
+        }
+        if ($request->hasFile('image')) {
+            $file = $request->file('image')->store('champImage');
+
+            $data['image'] = $file;
+        }
+
         $champion->update($data);
 
         $response = [
@@ -115,7 +138,7 @@ class ChampionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Champion  $champion
+     * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
      */
     public function destroy(Champion $champion)

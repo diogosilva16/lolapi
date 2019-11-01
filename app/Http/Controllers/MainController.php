@@ -13,9 +13,13 @@ class MainController extends Controller
         return view('welcome');
     }
 
-    public function list()
+    public function champlist()
     {
-        return Champion::with('championSkills')->get();
+        $champions = Champion::with('championSkills')->get();
+
+        return view('champions')
+            ->with('champions', $champions);
+//        return Champion::with('championSkills')->get();
     }
 
     public function insert(Request $request)

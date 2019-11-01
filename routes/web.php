@@ -16,10 +16,15 @@
  */
 Route::get('/', 'MainController@index')->name('index');
 
-Route::get('/list', 'MainController@list')->name('list');
+Route::get('/champlist', 'MainController@champlist')->name('champlist');
 
 Route::get('/insert-champion', 'MainController@form')->name('insert-form');
 Route::post('/insert-champion', 'MainController@insert')->name('insert-champion');
+
+Route::name('web.')->group(function () {
+    Route::resource('champion', 'EditChampionController');
+});
+
 /**
  *  Auth & Registration
  */
@@ -34,8 +39,7 @@ Route::get('/home', 'HomeController@index')->name('home');
  * Backoffice Routes
  */
 Route::group(['prefix' => 'admin', 'namespace' => 'Backoffice', 'middleware' => ['auth', 'role:admin|manager']],
-    function()
-    {
+    function () {
         Route::get('/', 'DashboardController@index')->name('admin');
 
         Route::resource('user', 'UserController');
