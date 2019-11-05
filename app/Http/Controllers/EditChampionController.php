@@ -6,6 +6,10 @@ use App\Champion;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Facades\Validator;
 
+/**
+ * @group Edit Champion management
+ */
+
 class EditChampionController extends Controller
 {
     /**

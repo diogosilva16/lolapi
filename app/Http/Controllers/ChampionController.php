@@ -7,6 +7,10 @@ use App\Http\Requests\ChampionStoreRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+/**
+* @group Champion management
+*/
+
 class ChampionController extends Controller
 {
     /**

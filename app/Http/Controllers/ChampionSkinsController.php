@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\ChampionSkins;
 use Illuminate\Http\Request;
 
+/**
+ * @group Champion Skins management
+ */
+
 class ChampionSkinsController extends Controller
 {
     /**
