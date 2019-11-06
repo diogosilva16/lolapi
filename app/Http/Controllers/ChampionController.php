@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Champion;
 use App\Http\Requests\ChampionStoreRequest;
+use App\Http\Requests\ChampionUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -20,7 +21,9 @@ class ChampionController extends Controller
      */
     public function index()
     {
-        //
+        $champions = Champion::with('championSkills')->get();
+
+        return $champions;
     }
 
     /**
@@ -87,26 +90,19 @@ class ChampionController extends Controller
      * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Champion $champion)
+    public function update(ChampionUpdateRequest $request, Champion $champion)
     {
         $data = $request->all();
-//        $champion->update($data);
-
-        $validate = Validator::make($data, [
-            'name' => 'required|string',
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'image' => 'required|image'
-        ], [
-            'name.required' => 'É necessário preencher o nome',
-            'title.required' => 'É necessário preencher o título',
-            'description.required' => 'É necessário preencher a descrição',
-            'image.required' => 'É necessário adicionar uma imagem',
-        ]);
-
-        if ($validate->fails()) {
-            return $validate->errors()->all();
-        }
+//        $validate = Validator::make($data, [
+//            'name' => 'string',
+//            'title' => 'string',
+//            'description' => 'string',
+//            'image' => 'image'
+//        ]);
+//
+//        if ($validate->fails()) {
+//            return $validate->errors()->all();
+//        }
         if ($request->hasFile('image')) {
             $file = $request->file('image')->store('champImage');
 

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\ChampionSkins;
+use App\Http\Requests\ChampionSkinStoreRequest;
+use App\Http\Requests\ChampionSkinUpdateRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * @group Champion Skins management
@@ -18,7 +21,9 @@ class ChampionSkinsController extends Controller
      */
     public function index()
     {
-        //
+        $champions = ChampionSkins::all();
+
+        return $champions;
     }
 
     /**
@@ -37,9 +42,23 @@ class ChampionSkinsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChampionSkinStoreRequest $request)
     {
-        //
+        $data = $request->all();
+
+        $file = $request->file('image')->store('champSkin');
+
+        $data['image'] = $file;
+
+        $post = ChampionSkins::create($data);
+
+        $response = [
+            'data' => $post,
+            'message' => 'Champion Inserido',
+            'result' => 'SUCCESS',
+        ];
+
+        return response($response, 201);
     }
 
     /**
@@ -50,7 +69,7 @@ class ChampionSkinsController extends Controller
      */
     public function show(ChampionSkins $championSkins)
     {
-        //
+        return $championSkins;
     }
 
     /**
@@ -71,9 +90,26 @@ class ChampionSkinsController extends Controller
      * @param  \App\ChampionSkins  $championSkins
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ChampionSkins $championSkins)
+    public function update(ChampionSkinUpdateRequest $request, ChampionSkins $championSkins)
     {
-        //
+        $data = $request->all();
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image')->store('champSkin');
+
+            $data['image'] = $file;
+        }
+
+        $championSkins->update($data);
+
+        $response = [
+            'data' => $championSkins,
+            'message' => 'Champion Skin atualizada',
+            'result' => 'SUCCESS',
+        ];
+
+        return response($response);
+
     }
 
     /**
@@ -84,6 +120,14 @@ class ChampionSkinsController extends Controller
      */
     public function destroy(ChampionSkins $championSkins)
     {
-        //
+        $championSkins->delete();
+
+        $response = [
+            'data' => $championSkins,
+            'message' => 'Champion apagado',
+            'result' => 'OK',
+        ];
+
+        return response($response);
     }
 }

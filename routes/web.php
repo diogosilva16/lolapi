@@ -21,6 +21,9 @@ Route::get('/champlist', 'MainController@champlist')->name('champlist');
 Route::get('/insert-champion', 'MainController@form')->name('insert-form');
 Route::post('/insert-champion', 'MainController@insert')->name('insert-champion');
 
+Route::get('/add-skill', 'ChampionSkillController@skillform')->name('skill-form');
+Route::post('/add-skill', 'ChampionSkillController@store')->name('add-skill');
+
 Route::name('web.')->group(function () {
     Route::resource('champion', 'EditChampionController');
 });

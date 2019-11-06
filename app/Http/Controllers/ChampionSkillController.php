@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Champion;
 use App\ChampionSkill;
 use App\Http\Requests\ChampionSkillStoreRequest;
+use App\Http\Requests\ChampionSkillUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -20,7 +22,9 @@ class ChampionSkillController extends Controller
      */
     public function index()
     {
-        //
+        $champions = ChampionSkill::all();
+
+        return $champions;
     }
 
     /**
@@ -87,9 +91,17 @@ class ChampionSkillController extends Controller
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ChampionSkill $championSkill)
+    public function update(ChampionSkillUpdateRequest $request, ChampionSkill $championSkill)
     {
         $data = $request->all();
+
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image')->store('champSkills');
+
+            $data['image'] = $file;
+        }
+
         $championSkill->update($data);
 
         $response = [
@@ -120,5 +132,13 @@ class ChampionSkillController extends Controller
         return response($response);
 
         return("deleted");
+    }
+
+    public function skillform(Request $request)
+    {
+        $champion = Champion::all();
+
+        return view('addskill')
+            ->with('champions', $champion);
     }
 }
