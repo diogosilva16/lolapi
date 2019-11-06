@@ -39,7 +39,7 @@
                                                 </div>
                                                 <div class="col-md-2">
                                                     <button type="button" class="btn btn-warning"
-                                                            onclick="location.href='{{url('skill/'.$skill->id.'/edit')}}'">
+                                                            onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
                                                         Editar
                                                     </button>
                                                 </div>

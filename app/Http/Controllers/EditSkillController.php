@@ -58,8 +58,7 @@ class EditSkillController extends Controller
      */
     public function edit(ChampionSkill $championSkill)
     {
-        return $championSkill;
-//        return view('editskills')->with('skill', $championSkill);
+        return view('editskills')->with('skill', $championSkill);
     }
 
     /**
