@@ -27,7 +27,7 @@ class ChampionSkinStoreRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'description' => 'required|string',
+            'image' => 'required|image',
             'champ_id' => 'required|exists:champions,id'
         ];
     }

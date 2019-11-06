@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Champion;
 use App\ChampionSkins;
 use App\Http\Requests\ChampionSkinStoreRequest;
 use App\Http\Requests\ChampionSkinUpdateRequest;
@@ -129,5 +130,13 @@ class ChampionSkinsController extends Controller
         ];
 
         return response($response);
+    }
+
+    public function skinform(Request $request)
+    {
+        $champion = Champion::all();
+
+        return view('addskin')
+            ->with('champions', $champion);
     }
 }

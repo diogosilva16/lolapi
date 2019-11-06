@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>LoL Champions API Docs</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/all.js"></script>
@@ -37,7 +37,8 @@
               <div id="toc">
       </div>
                     <ul class="toc-footer">
-                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                                  <li>TDI @ MCMM 2019</li>
+                                  <li>Diogo Silva - 85911</li>
                             </ul>
             </div>
     <div class="page-wrapper">
@@ -69,9 +70,153 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response:</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">null</code></pre>
+<pre><code class="language-json">[
+    {
+        "id": 1,
+        "small_name": "AatroxQ",
+        "name": "Dark Flight",
+        "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+        "champ_id": 1,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 2,
+        "small_name": "AatroxW",
+        "name": "Blood Thirst \/ Blood Price",
+        "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
+        "champ_id": 1,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 3,
+        "small_name": "AatroxE",
+        "name": "Blades of Torment",
+        "description": "Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them.",
+        "champ_id": 1,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 4,
+        "small_name": "AatroxR",
+        "name": "Massacre",
+        "description": "atrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+        "champ_id": 1,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 5,
+        "small_name": "AhriQ",
+        "name": "Orb of Deception",
+        "description": "hri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. Ahri gains movement speed that decays while her orb is traveling.",
+        "champ_id": 2,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 6,
+        "small_name": "AhriW",
+        "name": "Fox-Fire",
+        "description": "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
+        "champ_id": 2,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 7,
+        "small_name": "AhriE",
+        "name": "Charm",
+        "description": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
+        "champ_id": 2,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 8,
+        "small_name": "AhriR",
+        "name": "Spirit Rush",
+        "description": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
+        "champ_id": 2,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "image": ""
+    },
+    {
+        "id": 11,
+        "small_name": "AkaliW",
+        "name": "Twilight Shroud",
+        "description": "Akali teleports to a nearby location, leaving a cover of smoke at her previous location. While inside the shroud, Akali becomes Invisible and gains Movement Speed. Attacking or using abilities will briefly reveal her.",
+        "champ_id": 3,
+        "created_at": "2019-10-24 21:48:39",
+        "updated_at": "2019-10-24 21:48:39",
+        "deleted_at": null,
+        "image": "champSkills\/2cycg6fjXsYNuRs5rXCHseZcZ9UGcmbHNW7Sow7K.png"
+    },
+    {
+        "id": 12,
+        "small_name": "AkaliE",
+        "name": "Shuriken Flip",
+        "description": "lip backward and fire a shuriken forward, dealing physical damage. The first enemy or smoke cloud hit is marked. Re-cast to dash to the marked target, dealing additional damage.",
+        "champ_id": 3,
+        "created_at": "2019-10-24 21:51:53",
+        "updated_at": "2019-10-24 21:51:53",
+        "deleted_at": null,
+        "image": "champSkills\/D7XFTnMGwogFks3U8HAerHkozgLjyWR01g2hXYef.png"
+    },
+    {
+        "id": 13,
+        "small_name": "AkaliR",
+        "name": "Perfect Execution",
+        "description": "Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in a direction, executing all enemies she strikes.",
+        "champ_id": 3,
+        "created_at": "2019-10-24 21:52:53",
+        "updated_at": "2019-10-24 21:52:53",
+        "deleted_at": null,
+        "image": "champSkills\/1aKW7A7mWfz4Ah9NszYF9x3edfps7ojHJoeGIauE.png"
+    },
+    {
+        "id": 14,
+        "small_name": "AlistarQ",
+        "name": "Pulverize",
+        "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
+        "champ_id": 4,
+        "created_at": "2019-11-05 21:37:38",
+        "updated_at": "2019-11-05 21:37:38",
+        "deleted_at": null,
+        "image": "champSkills\/hMYmWjc3SPf6t0l3LMmHYhCXc1gFiZR5B2gTGKCl.png"
+    },
+    {
+        "id": 15,
+        "small_name": "AkaliQ",
+        "name": "Five Point Strike",
+        "description": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing.",
+        "champ_id": 3,
+        "created_at": "2019-11-05 21:56:11",
+        "updated_at": "2019-11-05 21:56:11",
+        "deleted_at": null,
+        "image": "champSkills\/yEk0L3a5TY1f8uKT8ZfQQjAQiR5u8Z1X3yuFJ7dr.png"
+    }
+]</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/championSkill</code></p>
 <!-- END_d59c689c20c9c3ca67836008e1702d4d -->
@@ -251,9 +396,28 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response:</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">null</code></pre>
+<pre><code class="language-json">[
+    {
+        "id": 1,
+        "name": "Default",
+        "image": "champSkin\/xE6jPWaGf2R2EfxVh77XzEp4KGRXxKkzKXnDLC9Z.jpeg",
+        "champ_id": 1,
+        "created_at": "2019-11-06 02:30:08",
+        "updated_at": "2019-11-06 02:30:08",
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "name": "Justicar Aatrox",
+        "image": "champSkin\/ZdG0AIj9YqfQhkztsqyYsRVcKte3cGhSzbDHdEjy.jpeg",
+        "champ_id": 1,
+        "created_at": "2019-11-06 02:31:09",
+        "updated_at": "2019-11-06 02:31:09",
+        "deleted_at": null
+    }
+]</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/championSkin</code></p>
 <!-- END_fde0c20f6b91d545716d31b0063148c6 -->
@@ -325,9 +489,9 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response:</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">null</code></pre>
+<pre><code class="language-json">[]</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/championSkin/{championSkin}</code></p>
 <!-- END_de0c0ff8087a75d712e56909593dc592 -->
@@ -423,9 +587,267 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response:</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">null</code></pre>
+<pre><code class="language-json">[
+    {
+        "id": 1,
+        "name": "Aatrox",
+        "title": "the Darkin Blade",
+        "description": "Massacreasljdkkas",
+        "created_at": null,
+        "updated_at": "2019-11-05 19:42:32",
+        "deleted_at": null,
+        "image": "champImage\/N5MTPubNTfxxQlbWjIh0mihcjbmdNrXYIIXGY0Rc.png",
+        "champion_skills": [
+            {
+                "id": 1,
+                "small_name": "AatroxQ",
+                "name": "Dark Flight",
+                "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 2,
+                "small_name": "AatroxW",
+                "name": "Blood Thirst \/ Blood Price",
+                "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 3,
+                "small_name": "AatroxE",
+                "name": "Blades of Torment",
+                "description": "Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 4,
+                "small_name": "AatroxR",
+                "name": "Massacre",
+                "description": "atrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+                "champ_id": 1,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Ahri",
+        "title": "the Nine-Tailed Fox",
+        "description": "Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete.",
+        "created_at": null,
+        "updated_at": "2019-11-01 17:59:21",
+        "deleted_at": null,
+        "image": "champImage\/d43vI6tGbJUbtjhNNzegvHTK5HFdJrotMVXZqw5S.png",
+        "champion_skills": [
+            {
+                "id": 5,
+                "small_name": "AhriQ",
+                "name": "Orb of Deception",
+                "description": "hri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. Ahri gains movement speed that decays while her orb is traveling.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 6,
+                "small_name": "AhriW",
+                "name": "Fox-Fire",
+                "description": "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 7,
+                "small_name": "AhriE",
+                "name": "Charm",
+                "description": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            },
+            {
+                "id": 8,
+                "small_name": "AhriR",
+                "name": "Spirit Rush",
+                "description": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
+                "champ_id": 2,
+                "created_at": null,
+                "updated_at": null,
+                "deleted_at": null,
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Akali",
+        "title": "the Rogue Assassin",
+        "description": "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe.",
+        "created_at": "2019-10-14 22:04:26",
+        "updated_at": "2019-11-01 17:59:42",
+        "deleted_at": null,
+        "image": "champImage\/nFyg40VMyjZoZaS9iHS1Vkx83myTxWIOqvdOicoq.png",
+        "champion_skills": [
+            {
+                "id": 11,
+                "small_name": "AkaliW",
+                "name": "Twilight Shroud",
+                "description": "Akali teleports to a nearby location, leaving a cover of smoke at her previous location. While inside the shroud, Akali becomes Invisible and gains Movement Speed. Attacking or using abilities will briefly reveal her.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:48:39",
+                "updated_at": "2019-10-24 21:48:39",
+                "deleted_at": null,
+                "image": "champSkills\/2cycg6fjXsYNuRs5rXCHseZcZ9UGcmbHNW7Sow7K.png"
+            },
+            {
+                "id": 12,
+                "small_name": "AkaliE",
+                "name": "Shuriken Flip",
+                "description": "lip backward and fire a shuriken forward, dealing physical damage. The first enemy or smoke cloud hit is marked. Re-cast to dash to the marked target, dealing additional damage.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:51:53",
+                "updated_at": "2019-10-24 21:51:53",
+                "deleted_at": null,
+                "image": "champSkills\/D7XFTnMGwogFks3U8HAerHkozgLjyWR01g2hXYef.png"
+            },
+            {
+                "id": 13,
+                "small_name": "AkaliR",
+                "name": "Perfect Execution",
+                "description": "Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in a direction, executing all enemies she strikes.",
+                "champ_id": 3,
+                "created_at": "2019-10-24 21:52:53",
+                "updated_at": "2019-10-24 21:52:53",
+                "deleted_at": null,
+                "image": "champSkills\/1aKW7A7mWfz4Ah9NszYF9x3edfps7ojHJoeGIauE.png"
+            },
+            {
+                "id": 15,
+                "small_name": "AkaliQ",
+                "name": "Five Point Strike",
+                "description": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing.",
+                "champ_id": 3,
+                "created_at": "2019-11-05 21:56:11",
+                "updated_at": "2019-11-05 21:56:11",
+                "deleted_at": null,
+                "image": "champSkills\/yEk0L3a5TY1f8uKT8ZfQQjAQiR5u8Z1X3yuFJ7dr.png"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Alistar",
+        "title": "the Minotaur",
+        "description": "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army.",
+        "created_at": "2019-10-24 21:59:35",
+        "updated_at": "2019-10-24 21:59:35",
+        "deleted_at": null,
+        "image": "champImage\/VqA1AAxWPvOAhiFqPnjOt3DmS3FAMPlM3El5Fajt.png",
+        "champion_skills": [
+            {
+                "id": 14,
+                "small_name": "AlistarQ",
+                "name": "Pulverize",
+                "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
+                "champ_id": 4,
+                "created_at": "2019-11-05 21:37:38",
+                "updated_at": "2019-11-05 21:37:38",
+                "deleted_at": null,
+                "image": "champSkills\/hMYmWjc3SPf6t0l3LMmHYhCXc1gFiZR5B2gTGKCl.png"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Amumu",
+        "title": "the Sad Mummy",
+        "description": "A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever.",
+        "created_at": "2019-10-24 22:01:19",
+        "updated_at": "2019-10-24 22:01:19",
+        "deleted_at": null,
+        "image": "champImage\/1MiNCQnSQsgaOYZVdlvItazG2xLpjrLFuZCoIHrK.png",
+        "champion_skills": []
+    },
+    {
+        "id": 6,
+        "name": "Anivia",
+        "title": "the Cryophoenix",
+        "description": "Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home",
+        "created_at": "2019-10-24 22:15:31",
+        "updated_at": "2019-10-24 22:15:31",
+        "deleted_at": null,
+        "image": "champImage\/Wxqeveh8NuTFNS1DyoQ5DO9YCGrfWsOoNJhiES8U.png",
+        "champion_skills": []
+    },
+    {
+        "id": 7,
+        "name": "Annie",
+        "title": "the Dark Child",
+        "description": "There have always been those within Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion",
+        "created_at": "2019-10-24 22:18:11",
+        "updated_at": "2019-10-24 22:18:11",
+        "deleted_at": null,
+        "image": "champImage\/lKjRXbzQD2koddgW3UiMTjQlAsYTq44HfhaEXS0B.png",
+        "champion_skills": []
+    },
+    {
+        "id": 8,
+        "name": "Ashe",
+        "title": "the Frost Archer",
+        "description": "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice.",
+        "created_at": "2019-11-01 18:19:55",
+        "updated_at": "2019-11-01 18:19:55",
+        "deleted_at": null,
+        "image": "champImage\/ynibEsp54MoMhHBK0RUdwjHNzRYmrh8T7d9zaOCh.png",
+        "champion_skills": []
+    },
+    {
+        "id": 9,
+        "name": "Aurelion Sol",
+        "title": "the Star Forger",
+        "description": "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude.",
+        "created_at": "2019-11-01 18:22:01",
+        "updated_at": "2019-11-01 18:22:01",
+        "deleted_at": null,
+        "image": "champImage\/MshO4Jfw56QzXIFIq30GeNIgHegbgZSO4gUzYJbu.png",
+        "champion_skills": []
+    },
+    {
+        "id": 10,
+        "name": "Azir",
+        "title": "the Emperor of the Sands",
+        "description": "zir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn",
+        "created_at": "2019-11-01 18:24:34",
+        "updated_at": "2019-11-01 18:24:34",
+        "deleted_at": null,
+        "image": "champImage\/pQdedG7z0e4grMMefzT3ldQ0Lf6F9y3OU6r32q7s.png",
+        "champion_skills": []
+    }
+]</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/champion</code></p>
 <!-- END_8287b53731a7e2de025ffda4593f75da -->
@@ -503,9 +925,9 @@ fetch(url, {
     "id": 1,
     "name": "Aatrox",
     "title": "the Darkin Blade",
-    "description": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery.",
+    "description": "Massacreasljdkkas",
     "created_at": null,
-    "updated_at": "2019-11-05 18:15:05",
+    "updated_at": "2019-11-05 19:42:32",
     "deleted_at": null,
     "image": "champImage\/N5MTPubNTfxxQlbWjIh0mihcjbmdNrXYIIXGY0Rc.png"
 }</code></pre>
