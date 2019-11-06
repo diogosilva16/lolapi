@@ -29,6 +29,7 @@ Route::post('/add-skin', 'ChampionSkinsController@store')->name('add-skin');
 
 Route::name('web.')->group(function () {
     Route::resource('champion', 'EditChampionController');
+    Route::resource('skill', 'EditSkillController');
 });
 
 /**

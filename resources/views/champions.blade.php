@@ -15,6 +15,7 @@
                         <div class="card-body" style="background-color:rgba(0,0,0,0.5)">
                             <div class="row">
                                 <div class="col-md-6" style="color: white">
+                                    {{--                                    <p>{{$champion->}}</p>--}}
                                     <p>{{$champion -> title}}</p>
                                     <p>{{$champion ->description}}</p>
                                     <button type="button" class="btn btn-warning" data-toggle="collapse"
@@ -26,6 +27,7 @@
                                     <button type="button" class="btn btn-warning"
                                             onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">Editar
                                     </button>
+
                                     <div class="collapse mt-2" id="skills{{$key}}">
                                         @foreach($champion->championSkills as $skill)
                                             <div class="row mb-2">
@@ -34,6 +36,12 @@
                                                 </div>
                                                 <div class="col-md-9 m-auto">
                                                     <p>{{$skill->name}}</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button type="button" class="btn btn-warning"
+                                                            onclick="location.href='{{url('skill/'.$skill->id.'/edit')}}'">
+                                                        Editar
+                                                    </button>
                                                 </div>
                                             </div>
                                         @endforeach

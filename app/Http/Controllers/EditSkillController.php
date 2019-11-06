@@ -2,18 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Champion;
 use App\ChampionSkill;
-use App\Http\Requests\ChampionSkillStoreRequest;
 use App\Http\Requests\ChampionSkillUpdateRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
-/**
- * @group Champion Skills management
- */
-
-class ChampionSkillController extends Controller
+class EditSkillController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,9 +15,7 @@ class ChampionSkillController extends Controller
      */
     public function index()
     {
-        $champions = ChampionSkill::all();
-
-        return $champions;
+        //
     }
 
     /**
@@ -43,23 +34,9 @@ class ChampionSkillController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ChampionSkillStoreRequest $request)
+    public function store(Request $request)
     {
-        $data = $request->all();
-
-        $file = $request->file('image')->store('champSkills');
-
-        $data['image'] = $file;
-
-        $post = ChampionSkill::create($data);
-
-        $response = [
-            'data' => $post,
-            'message' => 'Skill Adicionada',
-            'result' => 'SUCCESS',
-        ];
-
-        return response($response, 201);
+        //
     }
 
     /**
@@ -70,7 +47,7 @@ class ChampionSkillController extends Controller
      */
     public function show(ChampionSkill $championSkill)
     {
-//        return $championSkill;
+        //
     }
 
     /**
@@ -81,7 +58,8 @@ class ChampionSkillController extends Controller
      */
     public function edit(ChampionSkill $championSkill)
     {
-        //
+        return $championSkill;
+//        return view('editskills')->with('skill', $championSkill);
     }
 
     /**
@@ -91,6 +69,11 @@ class ChampionSkillController extends Controller
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
      */
+//    public function update(Request $request, ChampionSkill $championSkill)
+//    {
+//        //
+//    }
+
     public function update(ChampionSkillUpdateRequest $request, ChampionSkill $championSkill)
     {
         $data = $request->all();
@@ -113,6 +96,7 @@ class ChampionSkillController extends Controller
         return response($response);
     }
 
+
     /**
      * Remove the specified resource from storage.
      *
@@ -121,24 +105,6 @@ class ChampionSkillController extends Controller
      */
     public function destroy(ChampionSkill $championSkill)
     {
-        $championSkill->delete();
-
-        $response = [
-            'data' => $championSkill,
-            'message' => 'Champion skill apagada',
-            'result' => 'SUCCESS',
-        ];
-
-        return response($response);
-
-        return("deleted");
-    }
-
-    public function skillform(Request $request)
-    {
-        $champion = Champion::all();
-
-        return view('addskill')
-            ->with('champions', $champion);
+        //
     }
 }
