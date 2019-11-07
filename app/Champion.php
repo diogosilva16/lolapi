@@ -18,6 +18,6 @@ class Champion extends Model
     }
 
     public function championSkins(){
-        return $this->hasMany('App\ChampionSkins', 'champ_id');
+        return $this->hasMany('App\ChampionSkin', 'champ_id');
     }
 }

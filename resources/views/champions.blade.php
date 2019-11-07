@@ -14,56 +14,64 @@
                         <div class="card-header">{{$champion -> name}}</div>
                         <div class="card-body" style="background-color:rgba(0,0,0,0.5)">
                             <div class="row">
-                                <div class="col-md-6" style="color: white">
+                                <div class="col-md-8" style="color: white">
                                     {{--                                    <p>{{$champion->}}</p>--}}
                                     <p>{{$champion -> title}}</p>
                                     <p>{{$champion ->description}}</p>
-                                    <button type="button" class="btn btn-warning" data-toggle="collapse"
-                                            data-target="#skills{{$key}}">Skills
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="collapse"
-                                            data-target="#skins{{$key}}">Skins
-                                    </button>
-                                    <button type="button" class="btn btn-warning"
-                                            onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">Editar
-                                    </button>
-
-                                    <div class="collapse mt-2" id="skills{{$key}}">
-                                        @foreach($champion->championSkills as $skill)
-                                            <div class="row mb-2">
-                                                <div class="col-md-3">
-                                                    <img class="img-fluid m-auto" src="uploads/{{$skill->image}}">
-                                                </div>
-                                                <div class="col-md-9 m-auto">
-                                                    <p>{{$skill->name}}</p>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <button type="button" class="btn btn-warning"
-                                                            onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
-                                                        Editar
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                    <div class="collapse mt-2" id="skins{{$key}}">
-                                        @foreach($champion->championSkins as $skin)
-                                            <div class="row mb-2">
-                                                <div class="col-md-3">
-                                                    <img class="img-fluid" height="50" width="50"
-                                                         src="uploads/{{$skin->image}}">
-                                                </div>
-                                                <div class="col-md-9 m-auto">
-                                                    <p>{{$skin->name}}</p>
-                                                </div>
-                                            </div>
-
-                                        @endforeach
+                                    <div style="text-align: center">
+                                        <button type="button" class="btn btn-warning" data-toggle="collapse"
+                                                data-target="#skills{{$key}}">Skills
+                                        </button>
+                                        <button type="button" class="btn btn-warning" data-toggle="collapse"
+                                                data-target="#skins{{$key}}">Skins
+                                        </button>
+                                        <button type="button" class="btn btn-warning"
+                                                onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">
+                                            Editar
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <img class="img-fluid" src="uploads/{{$champion->image}}">
                                 </div>
+                            </div>
+                            <div class="collapse mt-5" style="color: white" id="skills{{$key}}">
+                                <p style="text-align: center;">Skills</p>
+                                @foreach($champion->championSkills as $skill)
+                                    <div class="row mb-2">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid m-auto" src="uploads/{{$skill->image}}">
+                                        </div>
+                                        <div class="col-md-4 m-auto">
+                                            <p>{{$skill->name}}</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
+                                                Editar
+                                            </button>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="collapse mt-5" style="color: white" id="skins{{$key}}">
+                                <p>Skins</p>
+                                @foreach($champion->championSkins as $skin)
+                                    <div class="row mb-2">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid" height="50" width="50"
+                                                 src="uploads/{{$skin->image}}">
+                                        </div>
+                                        <div class="col-md-9 m-auto">
+                                            <p>{{$skin->name}}</p>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="location.href='{{url('championSkin/'.$skin->id.'/edit')}}'">
+                                                Editar
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                @endforeach
                             </div>
                         </div>
                     </div>
