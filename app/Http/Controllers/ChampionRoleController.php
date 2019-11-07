@@ -2,18 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Champion;
-use App\ChampionSkin;
-use App\Http\Requests\ChampionSkinStoreRequest;
-use App\Http\Requests\ChampionSkinUpdateRequest;
+use App\ChampionRole;
+use App\Http\Requests\ChampionRoleStoreRequest;
+use App\Http\Requests\ChampionRoleUpdateRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
-/**
- * @group Champion Skins management
- */
-
-class ChampionSkinsController extends Controller
+class ChampionRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,7 +16,7 @@ class ChampionSkinsController extends Controller
      */
     public function index()
     {
-        $champions = ChampionSkin::all();
+        $champions = ChampionRole::all();
 
         return $champions;
     }
@@ -43,19 +37,15 @@ class ChampionSkinsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ChampionSkinStoreRequest $request)
+    public function store(ChampionRoleStoreRequest $request)
     {
         $data = $request->all();
 
-        $file = $request->file('image')->store('champSkin');
-
-        $data['image'] = $file;
-
-        $post = ChampionSkin::create($data);
+        $post = ChampionRole::create($data);
 
         $response = [
             'data' => $post,
-            'message' => 'Skin Adicionada',
+            'message' => 'Role Adicionado',
             'result' => 'SUCCESS',
         ];
 
@@ -65,21 +55,21 @@ class ChampionSkinsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionRole  $championRole
      * @return \Illuminate\Http\Response
      */
-    public function show(ChampionSkin $championSkin)
+    public function show(ChampionRole $championRole)
     {
-        return $championSkin;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ChampionSkin  $championSkins
+     * @param  \App\ChampionRole  $championRole
      * @return \Illuminate\Http\Response
      */
-    public function edit(ChampionSkin $championSkin)
+    public function edit(ChampionRole $championRole)
     {
         //
     }
@@ -88,55 +78,48 @@ class ChampionSkinsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionRole  $championRole
      * @return \Illuminate\Http\Response
      */
-    public function update(ChampionSkinUpdateRequest $request, ChampionSkin $championSkin)
+    public function update(ChampionRoleUpdateRequest $request, ChampionRole $championRole)
     {
         $data = $request->all();
 
-        if ($request->hasFile('image')) {
-            $file = $request->file('image')->store('champSkin');
-
-            $data['image'] = $file;
-        }
-
-        $championSkin->update($data);
+        $championRole->update($data);
 
         $response = [
-            'data' => $championSkin,
-            'message' => 'Champion Skin atualizada',
+            'data' => $championRole,
+            'message' => 'Champion Role atualizado',
             'result' => 'SUCCESS',
         ];
 
         return response($response);
-
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionRole  $championRole
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ChampionSkin $championSkin)
+    public function destroy(ChampionRole $championRole)
     {
-        $championSkin->delete();
+        $championRole->delete();
 
         $response = [
-            'data' => $championSkin,
-            'message' => 'Champion Skin apagada',
-            'result' => 'OK',
+            'data' => $championRole,
+            'message' => 'Champion role apagado',
+            'result' => 'SUCCESS',
         ];
 
         return response($response);
     }
 
-    public function skinform(Request $request)
+    public function roleform(Request $request)
     {
-        $champion = Champion::all();
+        $champion = ChampionRole::all();
 
-        return view('addskin')
+        return view('addrole')
             ->with('champions', $champion);
     }
 }

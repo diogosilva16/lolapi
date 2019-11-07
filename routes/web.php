@@ -27,6 +27,9 @@ Route::post('/add-skill', 'ChampionSkillController@store')->name('add-skill');
 Route::get('/add-skin', 'ChampionSkinsController@skinform')->name('skin-form');
 Route::post('/add-skin', 'ChampionSkinsController@store')->name('add-skin');
 
+Route::get('/add-role', 'ChampionRoleController@roleform')->name('role-form');
+Route::post('/add-role', 'ChampionRoleController@store')->name('add-role');
+
 Route::name('web.')->group(function () {
     Route::resource('champion', 'EditChampionController');
     Route::resource('championSkill', 'EditSkillController');

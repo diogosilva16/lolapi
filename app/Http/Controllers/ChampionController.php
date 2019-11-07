@@ -21,7 +21,7 @@ class ChampionController extends Controller
      */
     public function index()
     {
-        $champions = Champion::with('championSkills')->get();
+        $champions = Champion::with('championSkills', 'championSkins')->get();
 
         return $champions;
     }

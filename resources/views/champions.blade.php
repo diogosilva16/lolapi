@@ -6,12 +6,13 @@
             <button onclick="location.href='{{route('insert-champion')}}'">Adicionar novo champion</button>
             <button onclick="location.href='{{route('add-skin')}}'">Adicionar nova skin</button>
             <button onclick="location.href='{{route('add-skill')}}'">Adicionar nova habilidade</button>
+            <button onclick="location.href='{{route('add-role')}}'">Adicionar novo role</button>
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-md-8">
                 @foreach( $champions as $key=>$champion)
                     <div class="card mb-3">
-                        <div class="card-header">{{$champion -> name}}</div>
+                        <div class="card-header"><b>{{$champion -> name}}</b></div>
                         <div class="card-body" style="background-color:rgba(0,0,0,0.5)">
                             <div class="row">
                                 <div class="col-md-8" style="color: white">
@@ -58,12 +59,14 @@
                                 <p>Skins</p>
                                 @foreach($champion->championSkins as $skin)
                                     <div class="row mb-2">
-                                        <div class="col-md-3">
+                                        <div class="col-md-4">
                                             <img class="img-fluid" height="50" width="50"
                                                  src="uploads/{{$skin->image}}">
                                         </div>
-                                        <div class="col-md-9 m-auto">
+                                        <div class="col-md-4 m-auto">
                                             <p>{{$skin->name}}</p>
+                                        </div>
+                                        <div class="col-md-4 m-auto">
                                             <button type="button" class="btn btn-warning"
                                                     onclick="location.href='{{url('championSkin/'.$skin->id.'/edit')}}'">
                                                 Editar
