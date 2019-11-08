@@ -8,7 +8,7 @@
                     <div class="card-header">Adicionar nova skin</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('add-skin') }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('web.championSkin.store') }}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group row">

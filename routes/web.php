@@ -16,24 +16,11 @@
  */
 Route::get('/', 'MainController@index')->name('index');
 
-Route::get('/champlist', 'MainController@champlist')->name('champlist');
-
-Route::get('/insert-champion', 'MainController@form')->name('insert-form');
-Route::post('/insert-champion', 'MainController@insert')->name('insert-champion');
-
-Route::get('/add-skill', 'ChampionSkillController@skillform')->name('skill-form');
-Route::post('/add-skill', 'ChampionSkillController@store')->name('add-skill');
-
-Route::get('/add-skin', 'ChampionSkinsController@skinform')->name('skin-form');
-Route::post('/add-skin', 'ChampionSkinsController@store')->name('add-skin');
-
-Route::get('/add-role', 'ChampionRoleController@roleform')->name('role-form');
-Route::post('/add-role', 'ChampionRoleController@store')->name('add-role');
-
 Route::name('web.')->group(function () {
     Route::resource('champion', 'EditChampionController');
     Route::resource('championSkill', 'EditSkillController');
     Route::resource('championSkin', 'EditSkinsController');
+    Route::resource('championRole', 'EditChampionRoleController');
 });
 
 /**

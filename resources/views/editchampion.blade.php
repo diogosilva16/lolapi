@@ -82,24 +82,27 @@
                                 </div>
                             </div>
 
+                            <div class="form-group row">
+                                <label for="role_id" class="col-md-4 col-form-label text-md-right">Champion Role</label>
 
-                            {{--<div class="form-group row">--}}
-                            {{--<label for="user_id" class="col-md-4 col-form-label text-md-right">User ID</label>--}}
+                                <div class="col-md-6">
 
-                            {{--<div class="col-md-6">--}}
-
-                            {{--<select name="user_id">--}}
-                            {{--@foreach($users as $user)--}}
-                            {{--<option value="{{$user->id}}">{{$user->name}}</option>--}}
-                            {{--@endforeach--}}
-                            {{--</select>--}}
-                            {{--@error('user_id')--}}
-                            {{--<span class="invalid-feedback" role="alert">--}}
-                            {{--<strong>{{ $message }}</strong>--}}
-                            {{--</span>--}}
-                            {{--@enderror--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
+                                    <select name="role_id">
+                                        @foreach($roles as $role)
+                                            <option value="{{$role->id}}"
+                                                    @if($role->id == $champion->championRole->id)
+                                                    selected
+                                                    @endif()
+                                            >{{$role->name}}</option>
+                                        @endforeach
+                                    </select>
+                                    @error('role_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
@@ -109,9 +112,6 @@
                                 </div>
                             </div>
                         </form>
-                        {{--@if($post->response)--}}
-                        {{--<p>Post Atualizado</p>--}}
-                        {{--@endif--}}
                     </div>
                 </div>
             </div>

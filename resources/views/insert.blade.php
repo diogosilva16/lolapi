@@ -8,7 +8,7 @@
                     <div class="card-header">Inserir novo champion</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('insert-champion') }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('web.champion.store') }}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group row">
@@ -16,7 +16,7 @@
 
                                 <div class="col-md-6">
                                     <input id="name" type="text"
-                                           class="form-control @error('title') is-invalid @enderror" name="name"
+                                           class="form-control @error('name') is-invalid @enderror" name="name"
                                            value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                     @error('name')

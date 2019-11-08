@@ -93,7 +93,8 @@
                     {{--<a href="https://forge.laravel.com">Forge</a>--}}
                     {{--<a href="https://vapor.laravel.com">Vapor</a>--}}
                     {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
-                    <a href="{{route('champlist')}}">Lista de champions</a>
+                    <a href="{{route('web.champion.index')}}">Lista de champions</a>
+                    <a href="{{route('web.championSkin.index')}}">Lista de Skins</a>
                 </div>
             </div>
         </div>

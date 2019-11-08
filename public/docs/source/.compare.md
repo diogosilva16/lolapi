@@ -61,9 +61,9 @@ fetch(url, {
         "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
         "champ_id": 1,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-08 00:40:28",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/lV4jVsts0MB3AR7ubkQ8Cz0VAaLGmUBH6Oo7lfAw.png"
     },
     {
         "id": 2,
@@ -72,9 +72,9 @@ fetch(url, {
         "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
         "champ_id": 1,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 22:58:25",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/eWgbCd6sMo8tPiZgfRdJnb7d0KPLfPQu4T5Yc6JM.png"
     },
     {
         "id": 3,
@@ -83,20 +83,20 @@ fetch(url, {
         "description": "Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them.",
         "champ_id": 1,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 22:58:45",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/5RuFnyQAmlDh25XiHoskYIJkOYrC7T9kmigXVYpN.png"
     },
     {
         "id": 4,
         "small_name": "AatroxR",
         "name": "Massacre",
-        "description": "atrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+        "description": "Aatrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
         "champ_id": 1,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 22:59:02",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/7b1wCD5uBOUbBFaBEKHB2euC2h6pZKaOVrIK0RmY.png"
     },
     {
         "id": 5,
@@ -105,9 +105,9 @@ fetch(url, {
         "description": "hri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. Ahri gains movement speed that decays while her orb is traveling.",
         "champ_id": 2,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 23:49:42",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/r1aAkHeXLg3Q7jcZrsggP8BQTfn8hg7DWTcq4558.png"
     },
     {
         "id": 6,
@@ -116,9 +116,9 @@ fetch(url, {
         "description": "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
         "champ_id": 2,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 23:49:50",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/y0ohggyh8mT0eFWaFYF9CySiGP0AY0CBY5fwGc2e.png"
     },
     {
         "id": 7,
@@ -127,9 +127,9 @@ fetch(url, {
         "description": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
         "champ_id": 2,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 23:49:56",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/5qehj3IeF0hrQ5MRUhjWXqbTQG2Lflae1ytKfSss.png"
     },
     {
         "id": 8,
@@ -138,9 +138,9 @@ fetch(url, {
         "description": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
         "champ_id": 2,
         "created_at": null,
-        "updated_at": null,
+        "updated_at": "2019-11-06 23:50:03",
         "deleted_at": null,
-        "image": ""
+        "image": "champSkills\/puzfVvKeRR98YyOvrPucjIBoAQFYIMuag5ORHbvY.png"
     },
     {
         "id": 11,
@@ -303,20 +303,10 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response:
 
 ```json
-{
-    "id": 1,
-    "small_name": "AatroxQ",
-    "name": "Dark Flight",
-    "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
-    "champ_id": 1,
-    "created_at": null,
-    "updated_at": null,
-    "deleted_at": null,
-    "image": ""
-}
+null
 ```
 
 ### HTTP Request
@@ -467,19 +457,46 @@ fetch(url, {
     {
         "id": 1,
         "name": "Default",
-        "image": "champSkin\/xE6jPWaGf2R2EfxVh77XzEp4KGRXxKkzKXnDLC9Z.jpeg",
+        "image": "champSkin\/cpyNfeTd7uhdUS9HfETIJ4kmqcTk2x5y6is0iFqD.jpeg",
         "champ_id": 1,
-        "created_at": "2019-11-06 02:30:08",
-        "updated_at": "2019-11-06 02:30:08",
+        "created_at": "2019-11-07 00:37:16",
+        "updated_at": "2019-11-08 00:54:17",
         "deleted_at": null
     },
     {
         "id": 2,
         "name": "Justicar Aatrox",
-        "image": "champSkin\/ZdG0AIj9YqfQhkztsqyYsRVcKte3cGhSzbDHdEjy.jpeg",
+        "image": "champSkin\/YOZvd7rm3lpa4yzepnRJOKuaqRCCR7vX42CjsZpz.jpeg",
         "champ_id": 1,
-        "created_at": "2019-11-06 02:31:09",
-        "updated_at": "2019-11-06 02:31:09",
+        "created_at": "2019-11-07 00:37:24",
+        "updated_at": "2019-11-07 00:37:24",
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "name": "Default",
+        "image": "champSkin\/utxwKYbdsgbYqi6KDlnEHaOlIlSQ1WT3hIriVia9.jpeg",
+        "champ_id": 2,
+        "created_at": "2019-11-07 00:37:35",
+        "updated_at": "2019-11-07 00:37:35",
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "name": "Dynasty Ahri",
+        "image": "champSkin\/Yn7LG6p4EIOYwVbmTnvGJ5DVjYI5xmPySi9bnDqF.jpeg",
+        "champ_id": 2,
+        "created_at": "2019-11-07 00:37:48",
+        "updated_at": "2019-11-07 00:37:48",
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "name": "Mecha Aatrox",
+        "image": "champSkin\/eFqVu7gRAItriz7MN9lSfkDMgkfJCKtO0CCcKbSe.jpeg",
+        "champ_id": 1,
+        "created_at": "2019-11-08 00:52:36",
+        "updated_at": "2019-11-08 00:52:36",
         "deleted_at": null
     }
 ]
@@ -591,7 +608,15 @@ fetch(url, {
 > Example response (200):
 
 ```json
-[]
+{
+    "id": 1,
+    "name": "Default",
+    "image": "champSkin\/cpyNfeTd7uhdUS9HfETIJ4kmqcTk2x5y6is0iFqD.jpeg",
+    "champ_id": 1,
+    "created_at": "2019-11-07 00:37:16",
+    "updated_at": "2019-11-08 00:54:17",
+    "deleted_at": null
+}
 ```
 
 ### HTTP Request
@@ -743,11 +768,12 @@ fetch(url, {
         "id": 1,
         "name": "Aatrox",
         "title": "the Darkin Blade",
-        "description": "Massacreasljdkkas",
+        "description": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery.",
         "created_at": null,
-        "updated_at": "2019-11-05 19:42:32",
+        "updated_at": "2019-11-08 00:41:36",
         "deleted_at": null,
         "image": "champImage\/N5MTPubNTfxxQlbWjIh0mihcjbmdNrXYIIXGY0Rc.png",
+        "role_id": null,
         "champion_skills": [
             {
                 "id": 1,
@@ -756,9 +782,9 @@ fetch(url, {
                 "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
                 "champ_id": 1,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-08 00:40:28",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/lV4jVsts0MB3AR7ubkQ8Cz0VAaLGmUBH6Oo7lfAw.png"
             },
             {
                 "id": 2,
@@ -767,9 +793,9 @@ fetch(url, {
                 "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
                 "champ_id": 1,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 22:58:25",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/eWgbCd6sMo8tPiZgfRdJnb7d0KPLfPQu4T5Yc6JM.png"
             },
             {
                 "id": 3,
@@ -778,20 +804,49 @@ fetch(url, {
                 "description": "Aatrox unleashes the power of his blade, dealing damage to enemies hit and slowing them.",
                 "champ_id": 1,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 22:58:45",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/5RuFnyQAmlDh25XiHoskYIJkOYrC7T9kmigXVYpN.png"
             },
             {
                 "id": 4,
                 "small_name": "AatroxR",
                 "name": "Massacre",
-                "description": "atrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+                "description": "Aatrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
                 "champ_id": 1,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 22:59:02",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/7b1wCD5uBOUbBFaBEKHB2euC2h6pZKaOVrIK0RmY.png"
+            }
+        ],
+        "champion_skins": [
+            {
+                "id": 1,
+                "name": "Default",
+                "image": "champSkin\/cpyNfeTd7uhdUS9HfETIJ4kmqcTk2x5y6is0iFqD.jpeg",
+                "champ_id": 1,
+                "created_at": "2019-11-07 00:37:16",
+                "updated_at": "2019-11-08 00:54:17",
+                "deleted_at": null
+            },
+            {
+                "id": 2,
+                "name": "Justicar Aatrox",
+                "image": "champSkin\/YOZvd7rm3lpa4yzepnRJOKuaqRCCR7vX42CjsZpz.jpeg",
+                "champ_id": 1,
+                "created_at": "2019-11-07 00:37:24",
+                "updated_at": "2019-11-07 00:37:24",
+                "deleted_at": null
+            },
+            {
+                "id": 5,
+                "name": "Mecha Aatrox",
+                "image": "champSkin\/eFqVu7gRAItriz7MN9lSfkDMgkfJCKtO0CCcKbSe.jpeg",
+                "champ_id": 1,
+                "created_at": "2019-11-08 00:52:36",
+                "updated_at": "2019-11-08 00:52:36",
+                "deleted_at": null
             }
         ]
     },
@@ -804,6 +859,7 @@ fetch(url, {
         "updated_at": "2019-11-01 17:59:21",
         "deleted_at": null,
         "image": "champImage\/d43vI6tGbJUbtjhNNzegvHTK5HFdJrotMVXZqw5S.png",
+        "role_id": null,
         "champion_skills": [
             {
                 "id": 5,
@@ -812,9 +868,9 @@ fetch(url, {
                 "description": "hri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. Ahri gains movement speed that decays while her orb is traveling.",
                 "champ_id": 2,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 23:49:42",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/r1aAkHeXLg3Q7jcZrsggP8BQTfn8hg7DWTcq4558.png"
             },
             {
                 "id": 6,
@@ -823,9 +879,9 @@ fetch(url, {
                 "description": "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
                 "champ_id": 2,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 23:49:50",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/y0ohggyh8mT0eFWaFYF9CySiGP0AY0CBY5fwGc2e.png"
             },
             {
                 "id": 7,
@@ -834,9 +890,9 @@ fetch(url, {
                 "description": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
                 "champ_id": 2,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 23:49:56",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/5qehj3IeF0hrQ5MRUhjWXqbTQG2Lflae1ytKfSss.png"
             },
             {
                 "id": 8,
@@ -845,9 +901,29 @@ fetch(url, {
                 "description": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
                 "champ_id": 2,
                 "created_at": null,
-                "updated_at": null,
+                "updated_at": "2019-11-06 23:50:03",
                 "deleted_at": null,
-                "image": ""
+                "image": "champSkills\/puzfVvKeRR98YyOvrPucjIBoAQFYIMuag5ORHbvY.png"
+            }
+        ],
+        "champion_skins": [
+            {
+                "id": 3,
+                "name": "Default",
+                "image": "champSkin\/utxwKYbdsgbYqi6KDlnEHaOlIlSQ1WT3hIriVia9.jpeg",
+                "champ_id": 2,
+                "created_at": "2019-11-07 00:37:35",
+                "updated_at": "2019-11-07 00:37:35",
+                "deleted_at": null
+            },
+            {
+                "id": 4,
+                "name": "Dynasty Ahri",
+                "image": "champSkin\/Yn7LG6p4EIOYwVbmTnvGJ5DVjYI5xmPySi9bnDqF.jpeg",
+                "champ_id": 2,
+                "created_at": "2019-11-07 00:37:48",
+                "updated_at": "2019-11-07 00:37:48",
+                "deleted_at": null
             }
         ]
     },
@@ -860,6 +936,7 @@ fetch(url, {
         "updated_at": "2019-11-01 17:59:42",
         "deleted_at": null,
         "image": "champImage\/nFyg40VMyjZoZaS9iHS1Vkx83myTxWIOqvdOicoq.png",
+        "role_id": null,
         "champion_skills": [
             {
                 "id": 11,
@@ -905,7 +982,8 @@ fetch(url, {
                 "deleted_at": null,
                 "image": "champSkills\/yEk0L3a5TY1f8uKT8ZfQQjAQiR5u8Z1X3yuFJ7dr.png"
             }
-        ]
+        ],
+        "champion_skins": []
     },
     {
         "id": 4,
@@ -916,6 +994,7 @@ fetch(url, {
         "updated_at": "2019-10-24 21:59:35",
         "deleted_at": null,
         "image": "champImage\/VqA1AAxWPvOAhiFqPnjOt3DmS3FAMPlM3El5Fajt.png",
+        "role_id": null,
         "champion_skills": [
             {
                 "id": 14,
@@ -928,7 +1007,8 @@ fetch(url, {
                 "deleted_at": null,
                 "image": "champSkills\/hMYmWjc3SPf6t0l3LMmHYhCXc1gFiZR5B2gTGKCl.png"
             }
-        ]
+        ],
+        "champion_skins": []
     },
     {
         "id": 5,
@@ -939,7 +1019,9 @@ fetch(url, {
         "updated_at": "2019-10-24 22:01:19",
         "deleted_at": null,
         "image": "champImage\/1MiNCQnSQsgaOYZVdlvItazG2xLpjrLFuZCoIHrK.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     },
     {
         "id": 6,
@@ -950,7 +1032,9 @@ fetch(url, {
         "updated_at": "2019-10-24 22:15:31",
         "deleted_at": null,
         "image": "champImage\/Wxqeveh8NuTFNS1DyoQ5DO9YCGrfWsOoNJhiES8U.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     },
     {
         "id": 7,
@@ -961,7 +1045,9 @@ fetch(url, {
         "updated_at": "2019-10-24 22:18:11",
         "deleted_at": null,
         "image": "champImage\/lKjRXbzQD2koddgW3UiMTjQlAsYTq44HfhaEXS0B.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     },
     {
         "id": 8,
@@ -972,7 +1058,9 @@ fetch(url, {
         "updated_at": "2019-11-01 18:19:55",
         "deleted_at": null,
         "image": "champImage\/ynibEsp54MoMhHBK0RUdwjHNzRYmrh8T7d9zaOCh.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     },
     {
         "id": 9,
@@ -983,7 +1071,9 @@ fetch(url, {
         "updated_at": "2019-11-01 18:22:01",
         "deleted_at": null,
         "image": "champImage\/MshO4Jfw56QzXIFIq30GeNIgHegbgZSO4gUzYJbu.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     },
     {
         "id": 10,
@@ -994,7 +1084,61 @@ fetch(url, {
         "updated_at": "2019-11-01 18:24:34",
         "deleted_at": null,
         "image": "champImage\/pQdedG7z0e4grMMefzT3ldQ0Lf6F9y3OU6r32q7s.png",
-        "champion_skills": []
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
+    },
+    {
+        "id": 11,
+        "name": "Bard",
+        "title": "the Wandering Caretaker",
+        "description": "traveler from beyond the stars, Bard is an agent of serendipity who fights to maintain a balance where life can endure the indifference of chaos. Many Runeterrans sing songs that ponder his extraordinary nature",
+        "created_at": "2019-11-07 23:12:38",
+        "updated_at": "2019-11-07 23:12:38",
+        "deleted_at": null,
+        "image": "champImage\/zaKmzI0NdxTEz8Ccg1YB3ov4crUVeyEOAmpNlJ0K.png",
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
+    },
+    {
+        "id": 12,
+        "name": "Blitzcrank",
+        "title": "the Great Steam Golem",
+        "description": "Blitzcrank is an enormous, near-indestructible automaton from Zaun, originally built to dispose of hazardous waste. However, he found this primary purpose too restricting, and modified his own form to better serve the fragile people",
+        "created_at": "2019-11-07 23:15:38",
+        "updated_at": "2019-11-07 23:15:38",
+        "deleted_at": null,
+        "image": "champImage\/VqwEqGFGb7qYawOaY95WQdw5Trx32TJJiGeO79iU.png",
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
+    },
+    {
+        "id": 13,
+        "name": "Brand",
+        "title": "the Burning Vengeance",
+        "description": "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself",
+        "created_at": "2019-11-07 23:16:37",
+        "updated_at": "2019-11-07 23:16:37",
+        "deleted_at": null,
+        "image": "champImage\/OnHkYkp7JxmxiaYsPVFfZi5pu7zhaNc7vGoM1ua8.png",
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
+    },
+    {
+        "id": 14,
+        "name": "Braum",
+        "title": "the Heart of the Freljord",
+        "description": "Blessed with massive biceps and an even bigger heart, Braum is a beloved hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength, said to have felled a forest of oaks in a single night",
+        "created_at": "2019-11-07 23:28:15",
+        "updated_at": "2019-11-07 23:28:15",
+        "deleted_at": null,
+        "image": "champImage\/Braum\/CYS9CQ1CM8J5dUCmzxAFUtzux1ooCcQv8spInBVO.png",
+        "role_id": null,
+        "champion_skills": [],
+        "champion_skins": []
     }
 ]
 ```
@@ -1109,11 +1253,12 @@ fetch(url, {
     "id": 1,
     "name": "Aatrox",
     "title": "the Darkin Blade",
-    "description": "Massacreasljdkkas",
+    "description": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery.",
     "created_at": null,
-    "updated_at": "2019-11-05 19:42:32",
+    "updated_at": "2019-11-08 00:41:36",
     "deleted_at": null,
-    "image": "champImage\/N5MTPubNTfxxQlbWjIh0mihcjbmdNrXYIIXGY0Rc.png"
+    "image": "champImage\/N5MTPubNTfxxQlbWjIh0mihcjbmdNrXYIIXGY0Rc.png",
+    "role_id": null
 }
 ```
 

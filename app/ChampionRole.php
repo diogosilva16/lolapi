@@ -13,7 +13,7 @@ class ChampionRole extends Model
         'name'
     ];
 
-    public function championRoles(){
-        return $this->belongsTo('App\Champion', 'role_id');
-    }
+//    public function championRoles(){
+//        return $this->belongsTo('App\Champion', 'role_id');
+//    }
 }

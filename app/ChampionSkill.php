@@ -13,4 +13,8 @@ class ChampionSkill extends Model
         'small_name', 'name', 'description', 'champ_id', 'image'
     ];
 
+    public function championName(){
+        return $this->belongsTo('App\Champion', 'champ_id');
+    }
+
 }

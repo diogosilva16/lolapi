@@ -10,7 +10,7 @@ class Champion extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name', 'title', 'description', 'image'
+        'name', 'title', 'description', 'image', 'role_id'
     ];
 
     public function championSkills(){
@@ -19,5 +19,9 @@ class Champion extends Model
 
     public function championSkins(){
         return $this->hasMany('App\ChampionSkin', 'champ_id');
+    }
+
+    public function championRole(){
+        return $this->belongsTo('App\ChampionRole', 'role_id');
     }
 }

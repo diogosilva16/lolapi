@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Champion;
 use App\ChampionSkin;
+use App\Http\Requests\ChampionSkinStoreRequest;
 use App\Http\Requests\ChampionSkinUpdateRequest;
 use Illuminate\Http\Request;
 
@@ -15,7 +17,10 @@ class EditSkinsController extends Controller
      */
     public function index()
     {
-        //
+        $champions = Champion::with('championSkins')->get();
+
+        return view('skins')
+            ->with('champions', $champions);
     }
 
     /**
@@ -25,7 +30,10 @@ class EditSkinsController extends Controller
      */
     public function create()
     {
-        //
+        $champion = Champion::all();
+
+        return view('addskin')
+            ->with('champions', $champion);
     }
 
     /**
@@ -34,9 +42,17 @@ class EditSkinsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChampionSkinStoreRequest $request)
     {
-        //
+        $data = $request->all();
+
+        $file = $request->file('image')->store('champSkin');
+
+        $data['image'] = $file;
+
+        ChampionSkin::create($data);
+
+        return redirect()->route('web.champion.index');
     }
 
     /**
@@ -84,13 +100,7 @@ class EditSkinsController extends Controller
 
         $championSkin->update($data);
 
-        $response = [
-            'data' => $championSkin,
-            'message' => 'Champion Skin atualizada',
-            'result' => 'SUCCESS',
-        ];
-
-        return response($response);
+        return redirect()->route('web.champion.index');
 
     }
 

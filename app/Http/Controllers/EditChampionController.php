@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Champion;
+use App\ChampionRole;
+use App\Http\Requests\ChampionStoreRequest;
+use App\Http\Requests\ChampionUpdateRequest;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Facades\Validator;
 
@@ -19,7 +22,10 @@ class EditChampionController extends Controller
      */
     public function index()
     {
-        //
+        $champions = Champion::with('championSkills')->get();
+
+        return view('champions')
+            ->with('champions', $champions);
     }
 
     /**
@@ -29,7 +35,10 @@ class EditChampionController extends Controller
      */
     public function create()
     {
-        //
+        $champions = Champion::all();
+
+        return view('insert')
+            ->with('champions', $champions);
     }
 
     /**
@@ -38,9 +47,17 @@ class EditChampionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChampionStoreRequest $request)
     {
-        //
+        $data = $request->all();
+
+        $file = $request->file('image')->store('champImage/'.$data['name']);
+
+        $data['image'] = $file;
+
+        Champion::create($data);
+
+        return redirect()->route('web.champion.index');
     }
 
     /**
@@ -51,18 +68,23 @@ class EditChampionController extends Controller
      */
     public function show(Champion $champion)
     {
-        //
+        $champions = Champion::all();
+
+        return view('champion')->with('champion', $champions->where('id', $champion->id));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Champion  $champion
+     * @param  \App\ChampionRole  $championRole
      * @return \Illuminate\Http\Response
      */
     public function edit(Champion $champion)
     {
-        return view('editchampion')->with('champion', $champion);
+        $roles = ChampionRole::all();
+
+        return view('editchampion')->with('champion', $champion)->with('roles', $roles);
     }
 
     /**
@@ -72,37 +94,20 @@ class EditChampionController extends Controller
      * @param  \App\Champion  $champion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Champion $champion)
+    public function update(ChampionUpdateRequest $request, Champion $champion)
     {
         $data = $request->all();
 //        $champion->update($data);
 
-        $validate = Validator::make($data, [
-            'name' => 'string',
-            'title' => 'string',
-            'description' => 'string',
-            'image' => 'image'
-        ]);
-
-        if ($validate->fails()) {
-            return $validate->errors()->all();
-        }
         if ($request->hasFile('image')) {
-            $file = $request->file('image')->store('champImage');
+            $file = $request->file('image')->store('champImage/'.$data['name']);
 
             $data['image'] = $file;
         }
 
         $champion->update($data);
 
-        $resposta = 'FUNCIONOU';
-        $response = [
-            'data' => $champion,
-            'message' => 'Champion atualizado',
-            'result' => 'SUCCESS',
-        ];
-
-        return response($response);
+        return redirect()->route('web.champion.index');
     }
 
     /**

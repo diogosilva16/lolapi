@@ -46,7 +46,7 @@ class ChampionController extends Controller
     {
         $data = $request->all();
 
-        $file = $request->file('image')->store('champImage');
+        $file = $request->file('image')->store('champImage/'.$data['name']);
 
         $data['image'] = $file;
 
@@ -104,7 +104,7 @@ class ChampionController extends Controller
 //            return $validate->errors()->all();
 //        }
         if ($request->hasFile('image')) {
-            $file = $request->file('image')->store('champImage');
+            $file = $request->file('image')->store('champImage/'.$data['name']);
 
             $data['image'] = $file;
         }
