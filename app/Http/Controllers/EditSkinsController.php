@@ -39,7 +39,7 @@ class EditSkinsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(ChampionSkinStoreRequest $request)
@@ -58,7 +58,7 @@ class EditSkinsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionSkin $championSkin
      * @return \Illuminate\Http\Response
      */
     public function show(ChampionSkin $championSkin)
@@ -69,7 +69,7 @@ class EditSkinsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionSkin $championSkin
      * @return \Illuminate\Http\Response
      */
     public function edit(ChampionSkin $championSkin)
@@ -80,8 +80,8 @@ class EditSkinsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\ChampionSkin $championSkin
      * @return \Illuminate\Http\Response
      */
 //    public function update(Request $request, ChampionSkin $championSkin)
@@ -107,11 +107,13 @@ class EditSkinsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ChampionSkin  $championSkin
+     * @param  \App\ChampionSkin $championSkin
      * @return \Illuminate\Http\Response
      */
     public function destroy(ChampionSkin $championSkin)
     {
-        //
+        $championSkin->delete();
+
+        return redirect()->route('web.champion.index');
     }
 }

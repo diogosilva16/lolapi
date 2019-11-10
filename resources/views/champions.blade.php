@@ -20,7 +20,7 @@
                                     {{--                                    <p>{{$champion->}}</p>--}}
                                     <p>{{$champion -> title}}</p>
                                     <p>{{$champion ->description}}</p>
-{{--                                    {{$champion->championRole->name}}--}}
+                                    {{--                                    {{$champion->championRole->name}}--}}
                                     <div style="text-align: center">
                                         <button type="button" class="btn btn-warning" data-toggle="collapse"
                                                 data-target="#skills{{$key}}">Skills
@@ -73,14 +73,24 @@
                                         <div class="col-md-4 m-auto">
                                             <p>{{$skin->name}}</p>
                                         </div>
-                                        <div class="col-md-4 m-auto">
-                                            <button type="button" class="btn btn-warning"
+                                        <div class="col-md-4">
+                                            <button style="width: 20%" type="button" class="btn btn-warning"
                                                     onclick="location.href='{{url('championSkin/'.$skin->id.'/edit')}}'">
-                                                Editar
+                                                <i class="fa fa-pencil-square-o"></i>
                                             </button>
+
+                                            <form class="delete mt-1"
+                                                  action="{{route('web.championSkin.destroy', $skin->id)}}"
+                                                  method="POST">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                {{ csrf_field() }}
+                                                <button style="width: 20%" type="submit" class="btn btn-warning">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </button>
+                                            </form>
+
                                         </div>
                                     </div>
-
                                 @endforeach
                             </div>
                         </div>

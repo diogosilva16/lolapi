@@ -93,16 +93,7 @@ class ChampionController extends Controller
     public function update(ChampionUpdateRequest $request, Champion $champion)
     {
         $data = $request->all();
-//        $validate = Validator::make($data, [
-//            'name' => 'string',
-//            'title' => 'string',
-//            'description' => 'string',
-//            'image' => 'image'
-//        ]);
-//
-//        if ($validate->fails()) {
-//            return $validate->errors()->all();
-//        }
+
         if ($request->hasFile('image')) {
             $file = $request->file('image')->store('champImage/'.$data['name']);
 

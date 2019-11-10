@@ -64,6 +64,24 @@
                             </div>
 
                             <div class="form-group row">
+                                <label for="role_id" class="col-md-4 col-form-label text-md-right">Champion Role</label>
+
+                                <div class="col-md-6">
+
+                                    <select name="role_id">
+                                        @foreach($roles as $role)
+                                            <option value="{{$role->id}}">{{$role->name}}</option>
+                                        @endforeach
+                                    </select>
+                                    @error('role_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="image" class="col-md-4 col-form-label text-md-right">Imagem</label>
 
                                 <div class="col-md-6">

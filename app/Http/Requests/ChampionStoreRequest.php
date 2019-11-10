@@ -29,7 +29,8 @@ class ChampionStoreRequest extends FormRequest
             'name' => 'required|string',
             'title' => 'required|string',
             'description' => 'required|string',
-            'image' => 'required|image'
+            'image' => 'required|image',
+            'role_id' => 'required|exists:champion_roles,id',
         ];
     }
 
@@ -39,6 +40,7 @@ class ChampionStoreRequest extends FormRequest
             'title.required' => 'É necessário preencher o título',
             'description.required' => 'É necessário preencher a descrição',
             'image.required' => 'É necessário adicionar uma imagem',
+            'role_id.required' => 'É necessário adicionar um role'
         ];
     }
 

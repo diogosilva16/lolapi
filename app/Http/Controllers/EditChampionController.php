@@ -23,9 +23,10 @@ class EditChampionController extends Controller
     public function index()
     {
         $champions = Champion::with('championSkills')->get();
+        $roles = ChampionRole::all();
 
         return view('champions')
-            ->with('champions', $champions);
+            ->with('champions', $champions)->with('roles', $roles);
     }
 
     /**
@@ -36,9 +37,10 @@ class EditChampionController extends Controller
     public function create()
     {
         $champions = Champion::all();
+        $roles = ChampionRole::all();
 
         return view('insert')
-            ->with('champions', $champions);
+            ->with('champions', $champions)->with('roles', $roles);
     }
 
     /**
