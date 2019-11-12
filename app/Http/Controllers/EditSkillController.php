@@ -113,6 +113,8 @@ class EditSkillController extends Controller
      */
     public function destroy(ChampionSkill $championSkill)
     {
-        //
+        $championSkill->delete();
+
+        return redirect()->route('web.champion.index');
     }
 }

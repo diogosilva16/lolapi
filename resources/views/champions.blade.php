@@ -2,18 +2,39 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
-            <button onclick="location.href='{{route('web.champion.create')}}'">Adicionar novo champion</button>
-            <button onclick="location.href='{{route('web.championSkin.create')}}'">Adicionar nova skin</button>
-            <button onclick="location.href='{{route('web.championSkill.create')}}'">Adicionar nova habilidade</button>
-            <button onclick="location.href='{{route('web.championRole.create')}}'">Adicionar novo role</button>
-        </div>
+        @if(Auth::check())
+            @if(Auth::user()->role->name == "admin")
+                <div class="row justify-content-center">
+                    <button class="btn btn-warning mr-2 btn-outline-dark"
+                            onclick="location.href='{{route('web.champion.create')}}'">Adicionar novo champion
+                    </button>
+                    <button class="btn btn-warning mr-2 btn-outline-dark"
+                            onclick="location.href='{{route('web.championSkin.create')}}'">Adicionar nova skin
+                    </button>
+                    <button class="btn btn-warning mr-2 btn-outline-dark"
+                            onclick="location.href='{{route('web.championSkill.create')}}'">Adicionar nova habilidade
+                    </button>
+                    <button class="btn btn-warning mr-2 btn-outline-dark"
+                            onclick="location.href='{{route('web.championRole.create')}}'">Adicionar novo role
+                    </button>
+                </div>
+            @endif
+        @endif
 
         <div class="row justify-content-center mt-4">
             <div class="col-md-8">
                 @foreach( $champions as $key=>$champion)
                     <div class="card mb-3">
-                        <div class="card-header"><b>{{$champion -> name}}</b></div>
+                        <div class="card-header">
+                            <b>{{$champion -> name}}</b>
+                            @if(Auth::check())
+                                @if(Auth::user()->role->name == "admin")
+                                    <button type="button" class="btn btn-warning btn-outline-dark float-right"
+                                            onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">
+                                        Editar
+                                    </button>
+                                @endif
+                            @endif</div>
                         <div class="card-body" style="background-color:rgba(0,0,0,0.5)">
                             <div class="row">
                                 <div class="col-md-8" style="color: white">
@@ -22,16 +43,15 @@
                                     <p>{{$champion ->description}}</p>
                                     {{--                                    {{$champion->championRole->name}}--}}
                                     <div style="text-align: center">
-                                        <button type="button" class="btn btn-warning" data-toggle="collapse"
+                                        <button type="button" class="btn btn-warning btn-outline-dark"
+                                                data-toggle="collapse"
                                                 data-target="#skills{{$key}}">Skills
                                         </button>
-                                        <button type="button" class="btn btn-warning" data-toggle="collapse"
+                                        <button type="button" class="btn btn-warning btn-outline-dark"
+                                                data-toggle="collapse"
                                                 data-target="#skins{{$key}}">Skins
                                         </button>
-                                        <button type="button" class="btn btn-warning"
-                                                onclick="location.href='{{url('champion/'.$champion->id.'/edit')}}'">
-                                            Editar
-                                        </button>
+
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -49,16 +69,28 @@
                                         <div class="col-md-6">
                                             <p>{{$skill->description}}</p>
                                         </div>
-                                        <div class="col-md-3" style="text-align:center">
-                                            <button type="button" class="btn btn-warning"
-                                                    onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-warning"
-                                                    onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
-                                                <i class="fa fa-trash-o"></i>
-                                            </button>
-                                        </div>
+                                        @if(Auth::check())
+                                            @if(Auth::user()->role->name == "admin")
+                                                <div class="col-md-3" style="text-align:center">
+                                                    <button style="width: 30%" type="button"
+                                                            class="btn btn-warning btn-outline-dark"
+                                                            onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </button>
+
+                                                    <form class="delete mt-1"
+                                                          action="{{route('web.championSkill.destroy', $skill->id)}}"
+                                                          method="POST">
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        {{ csrf_field() }}
+                                                        <button style="width: 30%" type="submit"
+                                                                class="btn btn-warning btn-outline-dark">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            @endif
+                                        @endif
                                     </div>
                                 @endforeach
                             </div>
@@ -73,23 +105,29 @@
                                         <div class="col-md-4 m-auto">
                                             <p>{{$skin->name}}</p>
                                         </div>
-                                        <div class="col-md-4">
-                                            <button style="width: 20%" type="button" class="btn btn-warning"
-                                                    onclick="location.href='{{url('championSkin/'.$skin->id.'/edit')}}'">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </button>
+                                        @if(Auth::check())
+                                            @if(Auth::user()->role->name == "admin")
+                                                <div class="col-md-4">
+                                                    <button style="width: 20%" type="button"
+                                                            class="btn btn-warning btn-outline-dark"
+                                                            onclick="location.href='{{url('championSkin/'.$skin->id.'/edit')}}'">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </button>
 
-                                            <form class="delete mt-1"
-                                                  action="{{route('web.championSkin.destroy', $skin->id)}}"
-                                                  method="POST">
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                {{ csrf_field() }}
-                                                <button style="width: 20%" type="submit" class="btn btn-warning">
-                                                    <i class="fa fa-trash-o"></i>
-                                                </button>
-                                            </form>
+                                                    <form class="delete mt-1"
+                                                          action="{{route('web.championSkin.destroy', $skin->id)}}"
+                                                          method="POST">
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        {{ csrf_field() }}
+                                                        <button style="width: 20%" type="submit"
+                                                                class="btn btn-warning btn-outline-dark">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </button>
+                                                    </form>
 
-                                        </div>
+                                                </div>
+                                            @endif
+                                        @endif
                                     </div>
                                 @endforeach
                             </div>

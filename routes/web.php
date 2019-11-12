@@ -43,3 +43,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Backoffice', 'middleware' => 
         Route::resource('user', 'UserController');
     }
 );
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -17,7 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('champion', 'ChampionController');
-Route::resource('championSkill', 'ChampionSkillController');
-Route::resource('championSkin', 'ChampionSkinsController');
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::resource('champion', 'ChampionController');
+    Route::resource('championSkill', 'ChampionSkillController');
+    Route::resource('championSkin', 'ChampionSkinsController');
+});
 
