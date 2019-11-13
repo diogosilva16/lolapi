@@ -52,7 +52,7 @@ class EditSkinsController extends Controller
 
         ChampionSkin::create($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Skin criada.']);
     }
 
     /**
@@ -100,7 +100,7 @@ class EditSkinsController extends Controller
 
         $championSkin->update($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Skin atualizada.']);
 
     }
 
@@ -114,6 +114,6 @@ class EditSkinsController extends Controller
     {
         $championSkin->delete();
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Skin apagada.']);
     }
 }

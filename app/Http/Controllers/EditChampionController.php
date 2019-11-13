@@ -59,7 +59,7 @@ class EditChampionController extends Controller
 
         Champion::create($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Champion adicionado.']);
     }
 
     /**
@@ -109,9 +109,9 @@ class EditChampionController extends Controller
 
         $champion->update($data);
 
-        $message = $data['name'].' Champion Updated';
+//        $message = $data['name'].' Champion Updated';
 
-        return redirect()->route('web.champion.index')->withErrors($message);
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Champion atualizado.']);
     }
 
     /**

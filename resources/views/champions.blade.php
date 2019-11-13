@@ -21,12 +21,9 @@
             @endif
         @endif
 
-        @if($errors->any())
-            <p>{{$errors->first()}}</p>
-        @endif
-
         <div class="row justify-content-center mt-4">
             <div class="col-md-8">
+                @include('bo.partials.alerts')
                 @foreach( $champions as $key=>$champion)
                     <div class="card mb-3">
                         <div class="card-header">
@@ -64,7 +61,7 @@
                             </div>
                             <div class="collapse mt-5" style="color: white" id="skills{{$key}}">
                                 <p style="text-align: center; background-color:rgba(0,0,0,0.1)"><b>Abilities</b></p>
-                                @foreach($champion->championSkills as $skill)
+                                @foreach($champion->championSkills as $key=>$skill)
                                     <div class="row mb-2">
                                         <div class="col-md-3" style="text-align:center">
                                             <img class="m-auto" src="uploads/{{$skill->image}}">

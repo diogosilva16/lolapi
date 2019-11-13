@@ -44,7 +44,7 @@ class EditChampionRoleController extends Controller
 
         ChampionRole::create($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Role criado.']);
 
     }
 
@@ -83,7 +83,7 @@ class EditChampionRoleController extends Controller
 
         $championRole->update($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Role atualizado.']);
 
     }
 
@@ -97,7 +97,7 @@ class EditChampionRoleController extends Controller
     {
         $championRole->delete();
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Role apagado.']);
 
     }
 }

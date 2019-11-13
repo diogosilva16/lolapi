@@ -52,16 +52,17 @@
                                        class="col-md-4 col-form-label text-md-right">Description</label>
 
                                 <div class="col-md-6">
-                                    <input id="description" type="text"
+                                    <textarea rows="5" id="description" type="text"
                                            class="form-control @error('description') is-invalid @enderror"
-                                           name="description" value="{{ $champion->description }}" required
-                                           autocomplete="description">
-
+                                           name="description"  required
+                                              autocomplete="description">
+{{ $champion->description }}
                                     @error('description')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
+                                        </textarea>
                                 </div>
                             </div>
 

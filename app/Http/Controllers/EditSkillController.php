@@ -49,7 +49,7 @@ class EditSkillController extends Controller
 
         ChampionSkill::create($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Skill criada.']);
     }
 
     /**
@@ -100,7 +100,7 @@ class EditSkillController extends Controller
 
         $championSkill->update($data);
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => $data['name'].' - Skill atualizada.']);
 
     }
 
@@ -115,6 +115,6 @@ class EditSkillController extends Controller
     {
         $championSkill->delete();
 
-        return redirect()->route('web.champion.index');
+        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Skill apagada.']);
     }
 }
