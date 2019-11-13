@@ -109,7 +109,9 @@ class EditChampionController extends Controller
 
         $champion->update($data);
 
-        return redirect()->route('web.champion.index');
+        $message = $data['name'].' Champion Updated';
+
+        return redirect()->route('web.champion.index')->withErrors($message);
     }
 
     /**

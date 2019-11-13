@@ -7,10 +7,13 @@ use App\Http\Requests\ChampionRoleStoreRequest;
 use App\Http\Requests\ChampionRoleUpdateRequest;
 use Illuminate\Http\Request;
 
+/**
+ * @group Champion Role management
+ */
 class ChampionRoleController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a list of every role.
      *
      * @return \Illuminate\Http\Response
      */
@@ -22,7 +25,7 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for adding a new role to the database.
      *
      * @return \Illuminate\Http\Response
      */
@@ -32,9 +35,9 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Save a newly created role into the database.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(ChampionRoleStoreRequest $request)
@@ -53,9 +56,9 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show information from a specific champion role.
      *
-     * @param  \App\ChampionRole  $championRole
+     * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
      */
     public function show(ChampionRole $championRole)
@@ -64,9 +67,9 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editting a specific champion role.
      *
-     * @param  \App\ChampionRole  $championRole
+     * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
      */
     public function edit(ChampionRole $championRole)
@@ -75,10 +78,10 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a specific role.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ChampionRole  $championRole
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
      */
     public function update(ChampionRoleUpdateRequest $request, ChampionRole $championRole)
@@ -97,9 +100,9 @@ class ChampionRoleController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a specific role from the database.
      *
-     * @param  \App\ChampionRole  $championRole
+     * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
      */
     public function destroy(ChampionRole $championRole)

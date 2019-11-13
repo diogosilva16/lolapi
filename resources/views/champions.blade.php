@@ -21,6 +21,10 @@
             @endif
         @endif
 
+        @if($errors->any())
+            <p>{{$errors->first()}}</p>
+        @endif
+
         <div class="row justify-content-center mt-4">
             <div class="col-md-8">
                 @foreach( $champions as $key=>$champion)
@@ -77,7 +81,11 @@
                                                             onclick="location.href='{{url('championSkill/'.$skill->id.'/edit')}}'">
                                                         <i class="fa fa-pencil-square-o"></i>
                                                     </button>
-
+                                                    {{--<button style="width: 30%" type="button"--}}
+                                                    {{--class="btn btn-warning btn-outline-dark" data-catid="{{$skill->id}}" data-toggle="modal"--}}
+                                                    {{--data-target="#skillDeleteModal{{$key}}">--}}
+                                                    {{--<i class="fa fa-trash"></i>--}}
+                                                    {{--</button>--}}
                                                     <form class="delete mt-1"
                                                           action="{{route('web.championSkill.destroy', $skill->id)}}"
                                                           method="POST">
@@ -88,6 +96,31 @@
                                                             <i class="fa fa-trash-o"></i>
                                                         </button>
                                                     </form>
+                                                    {{--<div class="modal fade" id="skillDeleteModal{{$key}}" tabindex="-1"--}}
+                                                    {{--role="dialog" aria-labelledby="skillDeleteModal{{$key}}"--}}
+                                                    {{--aria-hidden="true">--}}
+                                                    {{--<div class="modal-dialog" role="document">--}}
+                                                    {{--<div class="modal-content">--}}
+                                                    {{--<div class="modal-header">--}}
+                                                    {{--<span style="color:red" id="skillDeleteModalLabel{{$key}}">--}}
+                                                    {{--Apagar <b>{{$skill->name}}</b>?</span>--}}
+                                                    {{--<button type="button" class="close"--}}
+                                                    {{--data-dismiss="modal" aria-label="Close">--}}
+                                                    {{--<span aria-hidden="true">&times;</span></button>--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="modal-body"> Do you want to delete this?--}}
+                                                    {{--<br/>--}}
+                                                    {{--<input type="hidden" name="skill_id" id="skill_id" value="">--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="modal-footer">--}}
+                                                    {{--<button type="button" class="btn btn-secondary"--}}
+                                                    {{--data-dismiss="modal">NO--}}
+                                                    {{--</button>--}}
+                                                    {{--<a href="#delete" id="delete"--}}
+                                                    {{--class="btn btn-primary">YES</a></div>--}}
+                                                    {{--</div>--}}
+                                                    {{--</div>--}}
+                                                    {{--</div>--}}
                                                 </div>
                                             @endif
                                         @endif
