@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">Inserir novo champion</div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="background-color:#D9D6CF">
                         <form method="POST" action="{{ route('web.champion.store') }}" enctype="multipart/form-data">
                             @csrf
 
@@ -85,7 +85,7 @@
                                 <label for="image" class="col-md-4 col-form-label text-md-right">Imagem</label>
 
                                 <div class="col-md-6">
-                                    <input id="image" type="file"
+                                    <input id="image" type="file" style="background-color:#D9D6CF"
                                            class="form-control @error('image') is-invalid @enderror" name="image"
                                            required>
 
@@ -99,7 +99,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn text-white" style="background-color: #E8A300">
                                         Submit
                                     </button>
                                 </div>

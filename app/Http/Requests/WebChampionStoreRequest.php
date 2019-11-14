@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class ChampionStoreRequest extends FormRequest
+class WebChampionStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -47,12 +47,7 @@ class ChampionStoreRequest extends FormRequest
     protected function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(
-            response()->json(
-                [
-                    'validator' => $validator->errors(),
-                    'msg' => 'Erro de validação.',
-                ], 422
-            )
+            response()->redirectTo('champion/create')->withErrors($validator)
         );
     }
 }

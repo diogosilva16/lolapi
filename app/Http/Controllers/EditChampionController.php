@@ -6,6 +6,8 @@ use App\Champion;
 use App\ChampionRole;
 use App\Http\Requests\ChampionStoreRequest;
 use App\Http\Requests\ChampionUpdateRequest;
+use App\Http\Requests\WebChampionStoreRequest;
+use App\Http\Requests\WebChampionUpdateRequest;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Facades\Validator;
 
@@ -49,7 +51,7 @@ class EditChampionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ChampionStoreRequest $request)
+    public function store(WebChampionStoreRequest $request)
     {
         $data = $request->all();
 
@@ -122,6 +124,8 @@ class EditChampionController extends Controller
      */
     public function destroy(Champion $champion)
     {
-        //
+        $champion->delete();
+
+        return redirect()->route('web.champion.index')->withErrors(['success' =>  "Champion apagado (".$champion['name'] .")"]);
     }
 }

@@ -3,17 +3,18 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center mt-4">
+            <p style="font-size: 30px; font-weight: bold; color: white">Skin List</p>
             <div class="col-md-12">
                 @foreach( $champions as $key=>$champion)
                     <div class="row">
-                        <a style="color: black" href="champion/{{$champion->id}}"><b>{{$champion->name}}</b></a>
+                        <a style="color: white" href="champion/{{$champion->id}}"><b>{{$champion->name}}</b></a>
                     </div>
                     <div class="row mb-5" style="text-align:center">
                         @foreach($champion->championSkins as $skin)
                             <div class="col-md-2 p-2" >
                                 <img class="img-fluid" width="150"
                                      src="uploads/{{$skin->image}}">
-                                <p class="m-2">{{$skin->name}}</p>
+                                <p class="m-2 text-white">{{$skin->name}}</p>
                             </div>
                         @endforeach
                     </div>

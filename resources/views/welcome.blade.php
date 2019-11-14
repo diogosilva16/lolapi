@@ -63,24 +63,24 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-color: #00174C">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a style="color: white" href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a style="color: white" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a style="color: white" href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md" style="color: white">
                     League of Legends Champion API
                 </div>
 
@@ -93,8 +93,8 @@
                     {{--<a href="https://forge.laravel.com">Forge</a>--}}
                     {{--<a href="https://vapor.laravel.com">Vapor</a>--}}
                     {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
-                    <a href="{{route('web.champion.index')}}">Lista de champions</a>
-                    <a href="{{route('web.championSkin.index')}}">Lista de Skins</a>
+                    <a style="color: white" href="{{route('web.champion.index')}}">Lista de champions</a>
+                    <a style="color: white" href="{{route('web.championSkin.index')}}">Lista de Skins</a>
                 </div>
             </div>
         </div>

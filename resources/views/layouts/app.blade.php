@@ -21,7 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #00174C">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -57,6 +57,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{route('web.champion.index')}}">Champion List</a>
+                                    <a class="dropdown-item" href="{{route('web.championSkin.index')}}">Champion Skins</a>
                                     @if(Auth::user()->role->name == "admin")
                                         <a class="dropdown-item" href="{{route('admin')}}">Backoffice</a>
                                     @endif

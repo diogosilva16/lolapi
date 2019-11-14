@@ -115,6 +115,6 @@ class EditSkillController extends Controller
     {
         $championSkill->delete();
 
-        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Skill apagada.']);
+        return redirect()->route('web.champion.index')->withErrors(['success' => "Skill apagada (".$championSkill['name'] .")"]);
     }
 }

@@ -114,6 +114,6 @@ class EditSkinsController extends Controller
     {
         $championSkin->delete();
 
-        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Skin apagada.']);
+        return redirect()->route('web.champion.index')->withErrors(['success' =>  "Skin apagada (".$championSkin['name'] .")"]);
     }
 }

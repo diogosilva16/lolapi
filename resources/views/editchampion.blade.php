@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">Editar Champion</div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="background-color:#D9D6CF">
                         <form method="POST" action="{{ route('web.champion.update', $champion->id) }}"
                               enctype="multipart/form-data">
                         @csrf
@@ -71,7 +71,7 @@
 
                                 <div class="col-md-6">
                                     <img src={{"../..//uploads/$champion->image"}}>
-                                    <input id="image" type="file"
+                                    <input id="image" type="file" style="background-color: #D9D6CF"
                                            class="form-control @error('image') is-invalid @enderror mt-2" name="image"
                                     >
 
@@ -104,10 +104,9 @@
                                     @enderror
                                 </div>
                             </div>
-
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn text-white" style="background-color: #E8A300">
                                         Submit
                                     </button>
                                 </div>

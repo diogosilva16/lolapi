@@ -97,7 +97,7 @@ class EditChampionRoleController extends Controller
     {
         $championRole->delete();
 
-        return redirect()->route('web.champion.index')->withErrors(['success' => ' - Role apagado.']);
+        return redirect()->route('web.champion.index')->withErrors(['success' => 'Role apagado.']);
 
     }
 }
