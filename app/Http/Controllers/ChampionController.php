@@ -7,6 +7,8 @@ use App\Http\Requests\ChampionStoreRequest;
 use App\Http\Requests\ChampionUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+
 
 /**
 * @group Champion management

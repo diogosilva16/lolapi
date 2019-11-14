@@ -24,7 +24,7 @@ class EditChampionController extends Controller
      */
     public function index()
     {
-        $champions = Champion::with('championSkills')->get();
+        $champions = Champion::with('championSkills')->simplePaginate(5);
         $roles = ChampionRole::all();
 
         return view('champions')

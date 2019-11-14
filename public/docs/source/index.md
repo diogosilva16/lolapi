@@ -14,10 +14,9 @@ toc_footers:
 - Diogo Silva - 85911
 ---
 <!-- START_INFO -->
-# Info
+# Basic Information
 
-Welcome to the generated API reference.
-[Get Postman Collection](http://localhost/docs/collection.json)
+Welcome to the League of Legends Champion API. This was developed for learning purposes.
 
 <!-- END_INFO -->
 
