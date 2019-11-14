@@ -27,6 +27,7 @@ Welcome to the generated API reference.
 <!-- START_fea193d859f64db61379c4ecc4174f1a -->
 ## Display a list of every role.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -67,6 +68,7 @@ fetch(url, {
 <!-- START_401d8a5d564a739b2caabb284cca0ebe -->
 ## Show the form for adding a new role to the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -107,6 +109,7 @@ fetch(url, {
 <!-- START_12b0932172ff4eb13c83f94bada19338 -->
 ## Save a newly created role into the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -140,6 +143,7 @@ fetch(url, {
 <!-- START_60591903fdce8721d4463a0ef78160a6 -->
 ## Show information from a specific champion role.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -180,6 +184,7 @@ fetch(url, {
 <!-- START_6dfcd7fb55f84d9423028294fbbe347b -->
 ## Show the form for editting a specific champion role.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -220,8 +225,7 @@ fetch(url, {
 <!-- START_551e0c954b0958050810cecfd6440bd7 -->
 ## Update a specific role.
 
-Teste
-
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -257,6 +261,7 @@ fetch(url, {
 <!-- START_eb36ee379cf1bd9d7e3cda0727815b83 -->
 ## Delete a specific role from the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -291,8 +296,9 @@ fetch(url, {
 
 
 <!-- START_d59c689c20c9c3ca67836008e1702d4d -->
-## Display a listing of the resource.
+## Display a list of every champion skill.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -331,8 +337,9 @@ fetch(url, {
 <!-- END_d59c689c20c9c3ca67836008e1702d4d -->
 
 <!-- START_18515feb2f30d7348b51a65eaace7b85 -->
-## Show the form for creating a new resource.
+## Show the form for adding a new champion skill to the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -371,8 +378,9 @@ fetch(url, {
 <!-- END_18515feb2f30d7348b51a65eaace7b85 -->
 
 <!-- START_d367bede4992567617eb7ccd98aa78fa -->
-## Store a newly created resource in storage.
+## Save a newly created champion skill into the database
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -404,8 +412,9 @@ fetch(url, {
 <!-- END_d367bede4992567617eb7ccd98aa78fa -->
 
 <!-- START_149309ea10a73c9a833bb5da5f78fab7 -->
-## Display the specified resource.
+## Show information from a specific champion skill
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -444,8 +453,9 @@ fetch(url, {
 <!-- END_149309ea10a73c9a833bb5da5f78fab7 -->
 
 <!-- START_ae575c6bd7ff5c56a77930a0e2ff9377 -->
-## Show the form for editing the specified resource.
+## Show the form for editting a specific champion skill.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -484,8 +494,9 @@ fetch(url, {
 <!-- END_ae575c6bd7ff5c56a77930a0e2ff9377 -->
 
 <!-- START_9891e07714209a0de0ce63158580eeac -->
-## Update the specified resource in storage.
+## Update a specific champion skill.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -519,8 +530,9 @@ fetch(url, {
 <!-- END_9891e07714209a0de0ce63158580eeac -->
 
 <!-- START_57be34943ea7b4722a94a75e1a795b38 -->
-## Remove the specified resource from storage.
+## Delete a specific champion skill from the database
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -557,6 +569,7 @@ fetch(url, {
 <!-- START_fde0c20f6b91d545716d31b0063148c6 -->
 ## Display a listing of the resource.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -597,6 +610,7 @@ fetch(url, {
 <!-- START_2ec2e77fcb7b2c22b6e32aa68325cef8 -->
 ## Show the form for creating a new resource.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -637,6 +651,7 @@ fetch(url, {
 <!-- START_48d90230770af6f0e908d21b368c070d -->
 ## Store a newly created resource in storage.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -670,6 +685,7 @@ fetch(url, {
 <!-- START_de0c0ff8087a75d712e56909593dc592 -->
 ## Display the specified resource.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -710,6 +726,7 @@ fetch(url, {
 <!-- START_66e54e7be86e74a606f8fedc7adf54ed -->
 ## Show the form for editing the specified resource.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -750,6 +767,7 @@ fetch(url, {
 <!-- START_fa659191331e6b53b7b661e6fc428798 -->
 ## Update the specified resource in storage.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -785,6 +803,7 @@ fetch(url, {
 <!-- START_83a724ff40955bfc71abffc7eb8197ac -->
 ## Remove the specified resource from storage.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -819,8 +838,9 @@ fetch(url, {
 
 
 <!-- START_8287b53731a7e2de025ffda4593f75da -->
-## Display a listing of the resource.
+## Display a list of existing champions.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -859,8 +879,9 @@ fetch(url, {
 <!-- END_8287b53731a7e2de025ffda4593f75da -->
 
 <!-- START_33980d59662416a10e9a0fb69a7fce80 -->
-## Show the form for creating a new resource.
+## Show the form for creating a new champion.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -899,8 +920,9 @@ fetch(url, {
 <!-- END_33980d59662416a10e9a0fb69a7fce80 -->
 
 <!-- START_eb6c9c2dffb31ca44295ceabe2fe6ccc -->
-## Store a newly created resource in storage.
+## Save a newly created champion in the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -932,8 +954,9 @@ fetch(url, {
 <!-- END_eb6c9c2dffb31ca44295ceabe2fe6ccc -->
 
 <!-- START_f52374dd94e3ace8fda487ce2cb0b34c -->
-## Display the specified resource.
+## Show a specific champion.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -972,8 +995,9 @@ fetch(url, {
 <!-- END_f52374dd94e3ace8fda487ce2cb0b34c -->
 
 <!-- START_11db9e3254fc7f2a5ea7029d3d7ae765 -->
-## Show the form for editing the specified resource.
+## Show the form for editing a specific champion.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -1012,8 +1036,9 @@ fetch(url, {
 <!-- END_11db9e3254fc7f2a5ea7029d3d7ae765 -->
 
 <!-- START_c43ccc58724871827265582aa9a55641 -->
-## Update the specified resource in storage.
+## Update a specific champion in the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash
@@ -1047,8 +1072,9 @@ fetch(url, {
 <!-- END_c43ccc58724871827265582aa9a55641 -->
 
 <!-- START_f9a2754f480c4e47f74880789347ecc4 -->
-## Remove the specified resource from storage.
+## Remove a champion record from the database.
 
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
 > Example request:
 
 ```bash

@@ -19,6 +19,7 @@ class ChampionSkinsController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function index()
     {
@@ -31,6 +32,7 @@ class ChampionSkinsController extends Controller
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -42,6 +44,7 @@ class ChampionSkinsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(ChampionSkinStoreRequest $request)
     {
@@ -67,6 +70,7 @@ class ChampionSkinsController extends Controller
      *
      * @param  \App\ChampionSkin  $championSkin
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function show(ChampionSkin $championSkin)
     {
@@ -78,6 +82,7 @@ class ChampionSkinsController extends Controller
      *
      * @param  \App\ChampionSkin  $championSkins
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function edit(ChampionSkin $championSkin)
     {
@@ -90,6 +95,7 @@ class ChampionSkinsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\ChampionSkin  $championSkin
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(ChampionSkinUpdateRequest $request, ChampionSkin $championSkin)
     {
@@ -118,6 +124,7 @@ class ChampionSkinsController extends Controller
      *
      * @param  \App\ChampionSkin  $championSkin
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(ChampionSkin $championSkin)
     {

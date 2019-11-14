@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Validator;
 class ChampionController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a list of existing champions.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function index()
     {
@@ -27,9 +28,10 @@ class ChampionController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new champion.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -37,10 +39,11 @@ class ChampionController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Save a newly created champion in the database.
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(ChampionStoreRequest $request)
     {
@@ -62,10 +65,11 @@ class ChampionController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show a specific champion.
      *
      * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function show(Champion $champion)
     {
@@ -73,10 +77,11 @@ class ChampionController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing a specific champion.
      *
      * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function edit(Champion $champion)
     {
@@ -84,11 +89,12 @@ class ChampionController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a specific champion in the database.
      *
      * @param  \Illuminate\Http\Request $request
      * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(ChampionUpdateRequest $request, Champion $champion)
     {
@@ -112,10 +118,11 @@ class ChampionController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove a champion record from the database.
      *
      * @param  \App\Champion $champion
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(Champion $champion)
     {

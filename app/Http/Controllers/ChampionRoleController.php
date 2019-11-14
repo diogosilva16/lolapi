@@ -16,6 +16,7 @@ class ChampionRoleController extends Controller
      * Display a list of every role.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function index()
     {
@@ -28,6 +29,7 @@ class ChampionRoleController extends Controller
      * Show the form for adding a new role to the database.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -39,6 +41,7 @@ class ChampionRoleController extends Controller
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(ChampionRoleStoreRequest $request)
     {
@@ -60,6 +63,7 @@ class ChampionRoleController extends Controller
      *
      * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function show(ChampionRole $championRole)
     {
@@ -71,6 +75,7 @@ class ChampionRoleController extends Controller
      *
      * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function edit(ChampionRole $championRole)
     {
@@ -83,6 +88,7 @@ class ChampionRoleController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(ChampionRoleUpdateRequest $request, ChampionRole $championRole)
     {
@@ -104,6 +110,7 @@ class ChampionRoleController extends Controller
      *
      * @param  \App\ChampionRole $championRole
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(ChampionRole $championRole)
     {

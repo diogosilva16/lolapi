@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Validator;
 class ChampionSkillController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a list of every champion skill.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function index()
     {
@@ -28,9 +29,10 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for adding a new champion skill to the database.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -38,10 +40,11 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Save a newly created champion skill into the database
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(ChampionSkillStoreRequest $request)
     {
@@ -63,10 +66,11 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show information from a specific champion skill
      *
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function show(ChampionSkill $championSkill)
     {
@@ -74,10 +78,11 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editting a specific champion skill.
      *
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function edit(ChampionSkill $championSkill)
     {
@@ -85,11 +90,12 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a specific champion skill.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(ChampionSkillUpdateRequest $request, ChampionSkill $championSkill)
     {
@@ -114,10 +120,11 @@ class ChampionSkillController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a specific champion skill from the database
      *
      * @param  \App\ChampionSkill  $championSkill
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(ChampionSkill $championSkill)
     {
