@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ed9ad9-a455-4603-b6b8-e9fa934d866d" name="Default Changelist" comment="">
+    <list default="true" id="c8ed9ad9-a455-4603-b6b8-e9fa934d866d" name="Default Changelist" comment="basic db checks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/champions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/champions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/skins.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/skins.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,7 @@
     <session id="142171627">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.10" value="1" />
@@ -85,10 +86,10 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +103,7 @@
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="602" />
+          <entry key="php" value="620" />
           <entry key="sass" value="1" />
           <entry key="scss" value="2" />
           <entry key="txt" value="1" />
@@ -111,13 +112,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="194" />
+          <entry key="Blade" value="196" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="23" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="408" />
+          <entry key="PHP" value="424" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="2" />
           <entry key="Sass" value="1" />
@@ -129,17 +130,17 @@
           <entry key="env" value="40" />
           <entry key="js" value="32" />
           <entry key="md" value="227" />
-          <entry key="php" value="21333" />
-          <entry key="txt" value="889" />
+          <entry key="php" value="22112" />
+          <entry key="txt" value="922" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="12067" />
+          <entry key="Blade" value="12075" />
           <entry key="JavaScript" value="32" />
           <entry key="Markdown" value="227" />
-          <entry key="PHP" value="9266" />
-          <entry key="PLAIN_TEXT" value="929" />
+          <entry key="PHP" value="10037" />
+          <entry key="PLAIN_TEXT" value="962" />
         </counts>
       </usages-collector>
     </session>
@@ -147,29 +148,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/champions.blade.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/ChampionsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="228" column="70" lean-forward="true" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="70" />
-              <folding>
-                <element signature="e#1696#1719#0#HTML" expanded="true" />
-                <element signature="e#2893#2915#0#HTML" expanded="true" />
-                <element signature="e#4643#4665#0#HTML" expanded="true" />
-                <element signature="e#18008#18028#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="588">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/skins.blade.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="e#1237#1257#0#HTML" expanded="true" />
-                <element signature="e#1467#1487#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="414">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/ChampionSkinsTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="920">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/ChampionSkillsTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -216,13 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_07_200735_add_champion_role.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ChampionRoleStoreRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ChampionRoleUpdateRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ChampionSkinsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MainController.php" />
-        <option value="$PROJECT_DIR$/app/ChampionSkill.php" />
-        <option value="$PROJECT_DIR$/resources/views/bo/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/ChampionRole.php" />
         <option value="$PROJECT_DIR$/app/Champion.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -267,6 +269,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/EditChampionController.php" />
         <option value="$PROJECT_DIR$/resources/views/champions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/skins.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ChampionRolesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ChampionSkillsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ChampionsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ChampionSkinsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       </list>
     </option>
   </component>
@@ -416,6 +425,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -444,45 +454,24 @@
             <path>
               <item name="exAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="exAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="exAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/exAPI/database/seeds/UsersTableSeeder.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lolapi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lolapi-master/lolapi-master" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -556,7 +545,8 @@
       <workItem from="1573660471940" duration="4901000" />
       <workItem from="1573668751170" duration="4735000" />
       <workItem from="1573679554768" duration="14020000" />
-      <workItem from="1573741078645" duration="3563000" />
+      <workItem from="1573741078645" duration="7519000" />
+      <workItem from="1573752170431" duration="457000" />
     </task>
     <task id="LOCAL-00001" summary="basic models and controllers&#10;api docs (to be edited soon)&#10;new routes&#10;public uploads">
       <created>1572360614754</created>
@@ -670,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573743993830</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="basic db checks">
+      <created>1573744676923</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573744676923</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149727000" />
+    <option name="totallyTimeSpent" value="154140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,7 +686,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30268458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3067114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -703,7 +700,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.3299566" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" weight="0.44862518" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" weight="0.28364688" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.5730825" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -757,48 +754,10 @@
     <MESSAGE value="updates" />
     <MESSAGE value="Feedback added" />
     <MESSAGE value="Frontend fixed;&#10;User feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frontend fixed;&#10;User feedback" />
+    <MESSAGE value="basic db checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic db checks" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ChampionSkillController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ChampionRoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="38" column="14" selection-start-line="33" selection-end-line="46" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/toastr.scss" />
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="50022" lean-forward="true" selection-start-line="50022" selection-end-line="50022" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -898,9 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,17 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
-          <folding>
-            <element signature="e#297#330#0#HTML" expanded="true" />
-            <element signature="e#604#626#0#HTML" expanded="true" />
-            <element signature="e#695#717#0#HTML" expanded="true" />
-            <element signature="e#835#868#0#HTML" expanded="true" />
-            <element signature="e#981#1003#0#HTML" expanded="true" />
-            <element signature="e#1117#1150#0#HTML" expanded="true" />
-            <element signature="e#1175#1197#0#HTML" expanded="true" />
-            <element signature="e#1500#1533#0#HTML" expanded="true" />
-            <element signature="e#1647#1669#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,18 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="71" column="98" lean-forward="true" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="98" />
-          <folding>
-            <element signature="e#324#356#0#HTML" expanded="true" />
-            <element signature="e#3823#3855#0#HTML" expanded="true" />
-            <element signature="e#4682#4715#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/champion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -959,10 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="33" column="114" selection-start-line="33" selection-start-column="114" selection-end-line="33" selection-end-column="114" />
-          <folding>
-            <element signature="e#307#339#0#HTML" expanded="true" />
-            <element signature="e#1658#1691#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,10 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="39" column="98" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="98" />
-          <folding>
-            <element signature="e#1968#2000#0#HTML" expanded="true" />
-            <element signature="e#2706#2739#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,10 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="101" column="114" lean-forward="true" selection-start-line="101" selection-start-column="81" selection-end-line="101" selection-end-column="114" />
-          <folding>
-            <element signature="e#4619#4651#0#HTML" expanded="true" />
-            <element signature="e#5367#5400#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,10 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="51" column="98" lean-forward="true" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="98" />
-          <folding>
-            <element signature="e#2617#2649#0#HTML" expanded="true" />
-            <element signature="e#3398#3431#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,9 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,15 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="75" column="52" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,9 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="74" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="74" />
-          <folding>
-            <element signature="e#5333#5366#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,13 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/WebChampionUpdateRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/WebChampionUpdateRequest.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/editchampion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1088,9 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-322">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#37#83#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,16 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EditChampionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="128" column="99" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,33 +1005,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EditChampionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
           <folding>
-            <element signature="e#37#83#0#PHP" expanded="true" />
+            <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/champion.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/champions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="228" column="70" lean-forward="true" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="70" />
-          <folding>
-            <element signature="e#1696#1719#0#HTML" expanded="true" />
-            <element signature="e#2893#2915#0#HTML" expanded="true" />
-            <element signature="e#4643#4665#0#HTML" expanded="true" />
-            <element signature="e#18008#18028#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="228" column="70" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/skins.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="e#1237#1257#0#HTML" expanded="true" />
-            <element signature="e#1467#1487#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ChampionRolesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ChampionSkinsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ChampionSkillsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ChampionsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
         </state>
       </provider>
     </entry>

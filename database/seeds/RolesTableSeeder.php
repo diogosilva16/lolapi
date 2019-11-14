@@ -16,9 +16,9 @@ class RolesTableSeeder extends Seeder
             'name' => 'admin',
         ]);
 
-        \App\Role::create([
-            'name' => 'manager',
-        ]);
+//        \App\Role::create([
+//            'name' => 'manager',
+//        ]);
 
         \App\Role::create([
             'name' => 'user',
