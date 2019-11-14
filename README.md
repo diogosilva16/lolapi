@@ -36,6 +36,9 @@ Each folder should have the right images.
 
 ###### You can now run your project in your machine with visible information.
 
+## Alternatively you can access the live demo here
+http://lolapi.jmfreitas.com/
+
 ------------
 
 ####My new image uploads are not working
